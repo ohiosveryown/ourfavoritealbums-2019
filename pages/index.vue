@@ -1,14 +1,24 @@
 <!-- layout -->
 <template>
-  <div class="container">
-    <h1 class="debug body">Our Favorite Albums</h1>
-  </div>
+  <main class="container">
+    <img src="https://picsum.photos/800/300" alt="">
+    <h1
+      data-speed-y = '4'
+      class="debug luxy-el">
+        Our Favorite Albums
+    </h1>
+    <img src="https://picsum.photos/800/300" alt="">
+  </main>
 </template>
 
 
 <!-- style -->
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
+
+  main {
+
+  }
 
   h1 {
     color: red;
@@ -19,7 +29,13 @@
 
 <!-- logic -->
 <script>
+  // import lxy from '../plugins/ga.js'
   export default {
+    mounted() {
+      // luxy.init({
+      //   wrapperSpeed:  0.06,
+      // })
+    },
     components: {
 
     }

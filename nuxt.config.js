@@ -21,6 +21,9 @@ export default {
     '~/assets/type.scss',
     '~/assets/util.scss'
   ],
+  plugins: [
+    { src: '~plugins/luxy.js', ssr: false }
+  ],
   // nuxt js modules
   modules: [
     '@nuxtjs/pwa',
