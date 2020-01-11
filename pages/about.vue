@@ -38,7 +38,6 @@
       width: grid-width(8);
 
     }
-
   }
 
   p {

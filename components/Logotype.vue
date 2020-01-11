@@ -29,12 +29,30 @@
     font-size: 5.6rem;
   }
 
+  svg {
+    animation: rotate 60s linear infinite;
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
 </style>
 
 
 <!-- logic -->
 <script>
   export default {
-    props: [ 'title', ]
+    props: [ 'title', ],
+    mounted() {
+      let logo = document.querySelector('svg')
+      logo.addEventListener('mouseover', () => {
+        logo.style.animationPlayState = 'paused'
+      })
+      logo.addEventListener('mouseleave', () => {
+        logo.style.animationPlayState = 'running'
+      })
+    }
   }
 </script>
