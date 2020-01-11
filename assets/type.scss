@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Respira';
+  src: url('../static/type/Respira.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../static/type/Canela.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('../static/type/Steinbeck.woff2') format("woff2");
+}
+
+.display  { font-family: 'Respira', var(--system-ui); }
+.headline { font-family: 'Steinbeck', var(--system-ui); }
+.body     { font-family: 'Canela', var(--system-ui); }
+
+.uc { text-transform: uppercase; }
+.taj { text-align: justify; }
+.tar { text-align: right; }
+.tac { text-align: center; }
+
+h1 { font-size: 2rem; }

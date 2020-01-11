@@ -1,0 +1,21 @@
+{
+  "name": "ourfavoritealbums-2019",
+  "version": "1.0.0",
+  "description": "2019 Albums of the Year is a communal project built around music & friendship. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you.",
+  "author": "Matthew Pence",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "@nuxtjs/pwa": "^3.0.0-0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.1"
+  }
+}
