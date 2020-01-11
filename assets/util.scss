@@ -10,7 +10,12 @@
 }
 
 // general
-.op-0 { opacity: 0; }
+.outline {
+  color: transparent;
+  text-stroke: 1px var(--gravity);
+  -webkit-text-stroke: 1px var(--gravity);
+  // mix-blend-mode: difference;
+}
 
 .mt-0 { margin-top: calc(var(--unit) * 0.5 ); }
 .mt-1 { margin-top: calc(var(--unit) * 1 ); }

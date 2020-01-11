@@ -21,6 +21,7 @@ export default {
     '~/assets/type.scss',
     '~/assets/util.scss'
   ],
+  // plugins
   plugins: [
     { src: '~plugins/luxy.js', ssr: false }
   ],

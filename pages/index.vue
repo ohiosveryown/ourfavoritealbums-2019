@@ -2,10 +2,8 @@
 <template>
   <main class="container">
     <img src="https://picsum.photos/800/300" alt="">
-    <h1
-      data-speed-y = '4'
-      class="debug luxy-el">
-        Our Favorite Albums
+    <h1 class="debug luxy-el">
+      Our Favorite Albums
     </h1>
     <img src="https://picsum.photos/800/300" alt="">
   </main>
@@ -15,10 +13,6 @@
 <!-- style -->
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
-
-  main {
-
-  }
 
   h1 {
     color: red;

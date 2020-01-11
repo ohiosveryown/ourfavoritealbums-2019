@@ -1,12 +1,11 @@
 <template>
-  <div class="all" id="luxy">
+  <div class="app-wrapper" id="luxy">
     <nuxt />
   </div>
 </template>
 
 <style>
-  .all {
-    border: 4px solid pink;
+  .app-wrapper {
     height: 400vh;
   }
 </style>

@@ -1,3 +1,5 @@
+@import '~/assets/grid.scss';
+
 @font-face {
   font-family: 'Respira';
   src: url('../static/type/Respira.woff2') format("woff2");
@@ -13,9 +15,20 @@
   src: url('../static/type/Steinbeck.woff2') format("woff2");
 }
 
-.display  { font-family: 'Respira', var(--system-ui); }
-.headline { font-family: 'Steinbeck', var(--system-ui); }
-.body     { font-family: 'Canela', var(--system-ui); }
+.display {
+  font: 1.8rem/1.6 'Respira', var(--system-ui);
+  @include breakpoint(md) { font-size: 4.8rem; }
+}
+
+.headline {
+  font: 1.8rem/1.6 'Steinbeck', var(--system-ui);
+  @include breakpoint(md) { font-size: 1.8rem; }
+}
+
+.body {
+  font: 1.8rem/1.6 'Canela', var(--system-ui);
+  @include breakpoint(md) { font-size: 2.2rem; }
+}
 
 .uc { text-transform: uppercase; }
 .taj { text-align: justify; }

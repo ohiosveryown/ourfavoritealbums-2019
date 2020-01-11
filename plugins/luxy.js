@@ -1,4 +1,4 @@
-import luxy from "luxy.js"
+import luxy from 'luxy.js'
 
 let width = window.innerWidth
 if (width > 1024) {
