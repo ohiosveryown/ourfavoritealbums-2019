@@ -3,7 +3,7 @@
   <main class="container">
     <img src="https://picsum.photos/800/300" alt="">
     <h1 class="debug luxy-el">
-      Our Favorite Albums
+      Our Favorite Albumss
     </h1>
     <img src="https://picsum.photos/800/300" alt="">
   </main>
