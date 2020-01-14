@@ -10,12 +10,12 @@
         />
 
         <Logotype
-          class = "gsapp"
+          class = "fadein"
           title = '2019'
         />
       </section>
 
-      <article class="gsap mb-4">
+      <article class="fadein mb-4">
         <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, Matt – and you can view the source here.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
       </article>
@@ -165,11 +165,19 @@
       anime({
         targets: '.gsap',
         opacity: [0,1],
-        translateY: [200,0],
+        translateY: [150,0],
         skewY: [10,0],
         easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
         duration: 800,
         delay: anime.stagger(200)
+      })
+
+      anime({
+        targets: '.fadein',
+        opacity: [0,1],
+        easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
+        duration: 800,
+        delay: 400,
       })
     }
   }
