@@ -17,6 +17,10 @@
   // mix-blend-mode: difference;
 }
 
+.content-width { width: max-content; }
+
+.infrared { color: var(--infrared); }
+
 .mt-0 { margin-top: calc(var(--unit) * 0.5 ); }
 .mt-1 { margin-top: calc(var(--unit) * 1 ); }
 .mt-2 { margin-top: calc(var(--unit) * 2); }
