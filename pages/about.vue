@@ -4,17 +4,18 @@
     <main>
       <section>
         <Header
-          class = "header mb-5"
+          class = "gsap header mb-5"
           kicker = 'About'
           title = '2019 Albums of the Year is a communal project built around music & friendship.'
         />
 
         <Logotype
+          class = "gsapp"
           title = '2019'
         />
       </section>
 
-      <article class="mb-4">
+      <article class="gsap mb-4">
         <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, Matt – and you can view the source here.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
       </article>
@@ -156,7 +157,20 @@
   import Header from '~/components/Header'
   import Logotype from '~/components/Logotype'
 
+  import anime from 'animejs/lib/anime.es.js'
+
   export default {
-    components: { Header, Logotype, }
+    components: { Header, Logotype, },
+    mounted() {
+      anime({
+        targets: '.gsap',
+        opacity: [0,1],
+        translateY: [200,0],
+        skewY: [10,0],
+        easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
+        duration: 800,
+        delay: anime.stagger(200)
+      })
+    }
   }
 </script>
