@@ -3,7 +3,7 @@
   <main class="container">
     <img src="https://picsum.photos/800/300" alt="">
     <h1 class="debug luxy-el">
-      <nuxt-link to = '/about'>Our Favorite Albumss</nuxt-link>
+      <nuxt-link to = '/about'>Our Favorite Albums</nuxt-link>
     </h1>
     <img src="https://picsum.photos/800/300" alt="">
   </main>
