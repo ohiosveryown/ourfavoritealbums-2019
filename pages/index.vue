@@ -11,7 +11,7 @@
         <h2 class="gsap headline infrared mb-3">My Intro to Let You Know</h2>
         <p class="gsap display mb-4">Albums of the Year is a communal project built around music & friendship established in 2018.</p>
         <p class="gsap display mb-4">To catalog the sonic mastery that is music, myself and a group of friends want to share our favorites with you.</p>
-        <p class="gsap display mb-2">This site was designed and built by me, <a href="https://twitter.com/cmykw_" target="_blank" class="link">Matt</a>. Get started by selecting a year to the <span class="sm">bottom</span><span class="not-sm">right</span>, or travel <n-link class="link" to = '/about'>back to 2019</n-link> 🤙🏼.</p>
+        <p class="gsap display mb-2">This site was designed and built by me, <a href="https://twitter.com/cmykw_" target="_blank" class="link">Matt</a>. Get started by selecting a year to the <span class="sm">top</span><span class="not-sm">right</span>, or travel <n-link class="link" to = '/about'>back to 2019</n-link> 🤙🏼.</p>
       </header>
 
       <aside class="stone mb-3">
@@ -21,7 +21,7 @@
 
         <ul>
           <li class="gsap mb-4">
-            <n-link to = '/' class="link body">• 2019 Albums of the Year</n-link>
+            <n-link to = '/about' class="link body">• 2019 Albums of the Year</n-link>
             <a class="link steinbeck op-5" href="" target="_blank">Listen to the Playlist</a>
           </li>
 
@@ -71,8 +71,8 @@
     flex-direction: column;
   }
 
-  .sm { @include breakpoint(md) { display: none; }}
-  .not-sm { display: none; @include breakpoint(md) { display: inherit; }}
+  .sm { display: inline; @include breakpoint(md) { display: none; }}
+  .not-sm { display: none; @include breakpoint(md) { display: inline; }}
 
 </style>
 
