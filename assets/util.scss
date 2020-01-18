@@ -26,7 +26,10 @@
 
 .content-width { width: max-content; }
 
-.link { text-decoration: underline; }
+.link {
+  text-decoration: underline;
+  &:hover { text-decoration: none; }
+}
 
 .gravity { color: var(--gravity); }
 .infrared { color: var(--infrared); }
