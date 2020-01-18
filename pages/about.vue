@@ -15,7 +15,7 @@
         />
       </section>
 
-      <article class="stone fadein mb-4">
+      <article class="stone gsap mb-4">
         <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
       </article>
@@ -165,23 +165,35 @@
 
     mounted() {
       document.body.style.background = 'var(--gravity)'
-      anime({
-        targets: '.gsap',
-        opacity: [0,1],
-        translateY: [150,0],
-        skewY: [10,0],
-        easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
-        duration: 800,
-        delay: anime.stagger(200)
+
+      // TweenMax.staggerFrom('.gsap', 1, { stagger: .08, opacity: 0, y: '200', skewX: '0', skewY: '20', ease:Power2.easeInOut } )
+
+      gsap.from('.gsap', {
+        opacity: 0,
+        y: 200,
+        skewY: 10,
+        stagger: .1,
+        duration: .9,
+        ease: Power2.easeInOut
       })
 
-      anime({
-        targets: '.fadein',
-        opacity: [0,1],
-        easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
-        duration: 800,
-        delay: 400,
-      })
+      // anime({
+      //   targets: '.gsap',
+      //   opacity: [0,1],
+      //   translateY: [150,0],
+      //   skewY: [10,0],
+      //   easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
+      //   duration: 800,
+      //   delay: anime.stagger(200)
+      // })
+
+      // anime({
+      //   targets: '.fadein',
+      //   opacity: [0,1],
+      //   easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
+      //   duration: 800,
+      //   delay: 400,
+      // })
     },
 
     beforeDestroy() {
