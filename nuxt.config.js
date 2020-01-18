@@ -19,7 +19,8 @@ export default {
   css: [
     '~/assets/reset.scss',
     '~/assets/type.scss',
-    '~/assets/util.scss'
+    '~/assets/util.scss',
+    '~/assets/navigation.scss'
   ],
   // plugins
   plugins: [

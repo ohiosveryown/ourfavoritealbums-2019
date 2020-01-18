@@ -1,6 +1,20 @@
 <!-- layout -->
 <template>
-  <div class="width">
+  <div class="about-wrapper width">
+
+    <nav class="mt-4 stone">
+      <div class="nav--left steinbeck">
+        <!-- <n-link to = '/'>
+          <svg width="24" height="24">
+            <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 .75C5.787.75.75 5.787.75 12S5.787 23.25 12 23.25 23.25 18.213 23.25 12 18.213.75 12 .75zM12 10a2 2 0 110 4 2 2 0 010-4zm0 .75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill="#FFF" fill-rule="nonzero"/>
+          </svg>
+        </n-link> -->
+        <n-link to = '/'>Back Home</n-link>
+      </div>
+      <div class="nav--title tac canela">Albums <span>of the</span> YEAR</div>
+      <div class="nav--right tar steinbeck">2019</div>
+    </nav>
+
     <main>
       <section>
         <Header
@@ -16,7 +30,7 @@
       </section>
 
       <article class="stone gsap mb-4">
-        <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
+        <p @click = "$router.push({ path: '/' })" class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
       </article>
     </main>
@@ -154,6 +168,7 @@
 
 <!-- logic -->
 <script>
+  import Navigation from '~/components/Navigation'
   import Header from '~/components/Header'
   import Logotype from '~/components/Logotype'
   import LogotypeW from '~/components/LogotypeW'
@@ -161,7 +176,7 @@
   import anime from 'animejs/lib/anime.es.js'
 
   export default {
-    components: { Header, Logotype, LogotypeW },
+    components: { Navigation, Header, Logotype, LogotypeW },
 
     mounted() {
       document.body.style.background = 'var(--gravity)'
