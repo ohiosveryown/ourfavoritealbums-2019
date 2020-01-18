@@ -17,9 +17,22 @@
   // mix-blend-mode: difference;
 }
 
+.outline-stone {
+  color: transparent;
+  text-stroke: 1px var(--stone);
+  -webkit-text-stroke: 1px var(--stone);
+  // mix-blend-mode: difference;
+}
+
 .content-width { width: max-content; }
 
+.link { text-decoration: underline; }
+
+.gravity { color: var(--gravity); }
 .infrared { color: var(--infrared); }
+.aqua { color: var(--aqua); }
+.stone { color: var(--stone); }
+.difference { mix-blend-mode: difference; }
 
 .mt-0 { margin-top: calc(var(--unit) * 0.5 ); }
 .mt-1 { margin-top: calc(var(--unit) * 1 ); }

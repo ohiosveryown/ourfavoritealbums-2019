@@ -4,24 +4,24 @@
     <main>
       <section>
         <Header
-          class = "gsap header mb-5"
+          class = "gsap header stone mb-5"
           kicker = 'About'
           title = '2019 Albums of the Year is a communal project built around music & friendship.'
         />
 
-        <Logotype
+        <LogotypeW
           class = "fadein"
           title = '2019'
         />
       </section>
 
-      <article class="fadein mb-4">
-        <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, Matt – and you can view the source here.</p>
+      <article class="stone fadein mb-4">
+        <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
       </article>
     </main>
 
-    <aside>
+    <aside class="stone">
       <h3 class="headline infrared mb-3">Albums Lists</h3>
 
       <li class="mb-3">
@@ -156,12 +156,15 @@
 <script>
   import Header from '~/components/Header'
   import Logotype from '~/components/Logotype'
+  import LogotypeW from '~/components/LogotypeW'
 
   import anime from 'animejs/lib/anime.es.js'
 
   export default {
-    components: { Header, Logotype, },
+    components: { Header, Logotype, LogotypeW },
+
     mounted() {
+      document.body.style.background = 'var(--gravity)'
       anime({
         targets: '.gsap',
         opacity: [0,1],
@@ -179,6 +182,10 @@
         duration: 800,
         delay: 400,
       })
+    },
+
+    beforeDestroy() {
+      document.body.style.background = 'var(--stone)'
     }
   }
 </script>
