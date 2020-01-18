@@ -10,7 +10,7 @@
         />
 
         <LogotypeW
-          class = "fadein"
+          class = "gsap"
           title = '2019'
         />
       </section>
