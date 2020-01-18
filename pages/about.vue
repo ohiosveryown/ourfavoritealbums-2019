@@ -35,7 +35,7 @@
       </article>
     </main>
 
-    <aside class="stone">
+    <aside class="gsap stone">
       <h3 class="headline infrared mb-3">Albums Lists</h3>
 
       <li class="mb-3">
@@ -181,34 +181,15 @@
     mounted() {
       document.body.style.background = 'var(--gravity)'
 
-      // TweenMax.staggerFrom('.gsap', 1, { stagger: .08, opacity: 0, y: '200', skewX: '0', skewY: '20', ease:Power2.easeInOut } )
-
       gsap.from('.gsap', {
         opacity: 0,
         y: 200,
         skewY: 10,
         stagger: .075,
         duration: 1,
+        // delay: .7,
         ease: Power2.easeInOut
       })
-
-      // anime({
-      //   targets: '.gsap',
-      //   opacity: [0,1],
-      //   translateY: [150,0],
-      //   skewY: [10,0],
-      //   easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
-      //   duration: 800,
-      //   delay: anime.stagger(200)
-      // })
-
-      // anime({
-      //   targets: '.fadein',
-      //   opacity: [0,1],
-      //   easing: 'cubicBezier(0.645, 0.045, 0.355, 1)',
-      //   duration: 800,
-      //   delay: 400,
-      // })
     },
 
     beforeDestroy() {
