@@ -16,10 +16,9 @@
 
 <!-- logic -->
 <script>
-  import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
 
   export default {
-    components: { Navigation, Logotype },
+    components: { Logotype },
   }
 </script>

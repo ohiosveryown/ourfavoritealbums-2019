@@ -7,8 +7,19 @@
         <n-link to = '/about'>All Lists</n-link>
       </div>
       <div class="nav--title tac canela">Albums <span>of the</span> YEAR</div>
-      <div class="nav--right tar steinbeck">Matt 2019</div>
+      <div class="nav--right tar steinbeck">
+        <n-link to = '/lists/matt'>Matt 2019</n-link>
+      </div>
     </nav>
+
+    <Logotype
+      class = "gsap"
+      title = 'Matt'
+    />
+
+    <ListItem
+
+    />
 
 
   </div>
@@ -17,21 +28,17 @@
 
 <!-- style -->
 <style>
-  /* #luxy {
-    right: 0; left: 0;
-    margin: auto;
-    max-width: var(--max-width) !important;
-    width: 88vw !important;
-  } */
-  /* .page-enter-active, .page-leave-active {
-    transition: all 1000ms ease;
-  } */
+
 </style>
 
 
 <!-- logic -->
 <script>
+  import Logotype from '~/components/Logotype'
+  import ListItem from '~/components/ListItem'
+
   export default {
     layout: 'list',
+    components: { Logotype, ListItem }
   }
 </script>

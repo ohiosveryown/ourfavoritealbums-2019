@@ -167,13 +167,12 @@
 
 <!-- logic -->
 <script>
-  import Navigation from '~/components/Navigation'
   import Header from '~/components/Header'
   import Logotype from '~/components/Logotype'
   import LogotypeW from '~/components/LogotypeW'
 
   export default {
-    components: { Navigation, Header, Logotype, LogotypeW },
+    components: { Header, Logotype, LogotypeW },
 
     mounted() {
       document.body.style.background = 'var(--gravity)'
