@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .nav--left {
@@ -12,6 +13,10 @@
   }
 
   .nav--title {
+    position: absolute;
+    margin: auto;
+    right: 0; left: 0;
+    width: max-content;
     font-size: 2rem;
     span { font-style: italic; }
   }

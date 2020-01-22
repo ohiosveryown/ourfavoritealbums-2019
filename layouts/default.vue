@@ -1,7 +1,7 @@
 <!-- layout -->
 <template>
-  <div id="luxy" class="app-wrapper">
-    <nuxt class="debug" />
+  <div class="app-wrapper">
+    <nuxt class="" />
   </div>
 </template>
 

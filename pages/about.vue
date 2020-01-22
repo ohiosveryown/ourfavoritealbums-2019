@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <div class="about-wrapper width">
+  <div id="luxy" class="about-wrapper width">
 
     <nav class="mt-4 stone">
       <div class="nav--left steinbeck">
@@ -9,7 +9,7 @@
             <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 .75C5.787.75.75 5.787.75 12S5.787 23.25 12 23.25 23.25 18.213 23.25 12 18.213.75 12 .75zM12 10a2 2 0 110 4 2 2 0 010-4zm0 .75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill="#FFF" fill-rule="nonzero"/>
           </svg>
         </n-link> -->
-        <n-link to = '/'>Back Home</n-link>
+        <n-link to = '/'>AOTY</n-link>
       </div>
       <div class="nav--title tac canela">Albums <span>of the</span> YEAR</div>
       <div class="nav--right tar steinbeck">2019</div>
@@ -39,7 +39,7 @@
       <h3 class="headline infrared mb-3">Albums Lists</h3>
 
       <li class="mb-3">
-        <nuxt-link to = '/'><h2 class="mb-0 content-width respira">Matt's Top 5 Albums</h2></nuxt-link>
+        <nuxt-link to = '/lists/matt'><h2 class="mb-0 content-width respira">Matt's Top 5 Albums</h2></nuxt-link>
         <a
           class="steinbeck op-5"
           href="https://twitter.com/cmykw_"
@@ -171,8 +171,6 @@
   import Header from '~/components/Header'
   import Logotype from '~/components/Logotype'
   import LogotypeW from '~/components/LogotypeW'
-
-  import anime from 'animejs/lib/anime.es.js'
 
   export default {
     components: { Navigation, Header, Logotype, LogotypeW },
