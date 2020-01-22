@@ -149,12 +149,11 @@
   // aside
   aside {
     margin-bottom: 8rem;
-    @include breakpoint(md) { margin: 0 0 12rem grid-width(7); }
-    @include breakpoint(mdl) { margin: 0 0 12rem grid-width(8); }
+    @include breakpoint(mdl) { margin: 0 0 12rem grid-width(7); }
 
     h2 {
       font-size: 1.8rem;
-      @include breakpoint(md) { font-size: 2.4rem; }
+      @include breakpoint(md) { font-size: 3.2rem; }
     }
 
     a {

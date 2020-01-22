@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-    <div class="index-wrapper width">
+  <div class="index-wrapper width">
 
     <nav class="mt-4 stone">
       <div class="nav--title tac canela">Albums <span>of the</span> YEAR</div>
@@ -11,7 +11,7 @@
         <h2 class="gsap headline infrared mb-3">My Intro to Let You Know</h2>
         <p class="gsap display mb-4">Albums of the Year is a communal project built around music & friendship established in 2018.</p>
         <p class="gsap display mb-4">To catalog the sonic mastery that is music, myself and a group of friends want to share our favorites with you.</p>
-        <p class="gsap display mb-2">This site was designed and built by me, <a href="https://twitter.com/cmykw_" target="_blank" class="link">Matt</a>. Get started by selecting a year to the <span class="sm">top</span><span class="not-sm">right</span>, or travel <n-link class="link" to = '/about'>back to 2019</n-link> 🤙🏼.</p>
+        <p class="gsap display mb-2">This site was designed and built by me, <a href="https://twitter.com/cmykw_" target="_blank" class="link">Matt</a>. Get started by selecting a year <span class="sm">below</span><span class="not-sm">to the right</span>, or travel <n-link class="link" to = '/about'>back to 2019</n-link> 🤙🏼.</p>
       </header>
 
       <aside class="stone mb-3">
@@ -34,7 +34,7 @@
 
     </main>
 
-    </div>
+  </div>
 </template>
 
 
