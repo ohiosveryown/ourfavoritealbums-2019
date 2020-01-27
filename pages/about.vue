@@ -30,13 +30,15 @@
       </section>
 
       <article class="stone gsap mb-4">
-        <p @click = "$router.push({ path: '/' })" class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
+        <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
       </article>
     </main>
 
     <aside class="gsap stone">
-      <h3 class="headline infrared mb-3">Albums Lists</h3>
+      <h3 class="headline infrared mb-3">
+        <a name = "all-lists"
+      </h3>
 
       <li class="mb-3">
         <nuxt-link to = '/lists/matt'><h2 class="mb-0 content-width respira">Matt's Top 5 Albums</h2></nuxt-link>

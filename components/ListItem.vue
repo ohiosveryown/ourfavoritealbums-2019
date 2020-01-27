@@ -17,6 +17,8 @@
 
 <!-- style -->
 <style>
+  h1 { width: max-content; }
+
   img {
     position: absolute;
     z-index: var(--zmin);
