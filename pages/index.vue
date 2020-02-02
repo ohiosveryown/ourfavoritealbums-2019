@@ -1,38 +1,53 @@
 <!-- layout -->
 <template>
-  <div class="index-wrapper width">
+  <div class="debug index-wrapper width">
 
-    <nav class="mt-4 stone">
-      <div class="nav--title tac canela">Albums <span>of the</span> YEAR</div>
-    </nav>
+    <section class="viewport">
+      <div id="scroll-container" class="scroll-container">
+        <div class="content">
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-10.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-14.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-15.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-16.jpg" alt="">
+      </div>
+      <!--  REPEAT  -->
 
-    <main>
-      <header class="header stone mb-5">
-        <h2 class="gsap headline infrared mb-3">My Intro to Let You Know</h2>
-        <p class="gsap display mb-4">Albums of the Year is a communal project built around music & friendship established in 2018.</p>
-        <p class="gsap display mb-4">To catalog the sonic mastery that is music, myself and a group of friends want to share our favorites with you.</p>
-        <p class="gsap display mb-2">This site was designed and built by me, <a href="https://twitter.com/cmykw_" target="_blank" class="link">Matt</a>. Get started by selecting a year <span class="sm">below</span><span class="not-sm">to the right</span>, or travel <n-link class="link" to = '/about'>back to 2019</n-link> 🤙🏼.</p>
-      </header>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-10.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-14.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-15.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-16.jpg" alt="">
+      </div>
+      <!--  REPEAT  -->
 
-      <aside class="stone mb-3">
-        <header>
-          <h2 class="gsap headline infrared mb-3">Years of Albums</h2>
-        </header>
-
-        <ul>
-          <li class="gsap mb-4">
-            <n-link to = '/about' class="link body">• 2019 Albums of the Year</n-link>
-            <a class="link steinbeck op-5" href="" target="_blank">Listen to the Playlist</a>
-          </li>
-
-          <li class="gsap mb-2">
-            <n-link to = '/' class="link body">• 2018 Albums of the Year</n-link>
-            <a class="link steinbeck op-5" href="" target="_blank">Listen to the Playlist</a>
-          </li>
-        </ul>
-      </aside>
-
-    </main>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-10.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-14.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-15.jpg" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-16.jpg" alt="">
+      </div>
+        </div>
+      </div>
+    </section>
 
   </div>
 </template>
@@ -42,38 +57,46 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-  nav { align-items: center; }
-  .nav--title { width: 100%; }
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
-    @include breakpoint(md) {
-      flex-direction: row;
-    }
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.content {
+  width: 60%;
+  padding-top:50px;
+}
+
+.img-container {
+  margin: 0 0 50px;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
-
-  header {
-    @include breakpoint(md) { width: grid-width(7); }
-    // p + p { text-indent: 2ch; }
-    h2 { padding-top: 11.2rem; }
-  }
-
-  aside {
-    @include breakpoint(md) {
-      margin-left: grid-width(1);
-      width: grid-width(4);
-    }
-  }
-
-  li {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sm { display: inline; @include breakpoint(md) { display: none; }}
-  .not-sm { display: none; @include breakpoint(md) { display: inline; }}
+}
 
 </style>
 
@@ -82,9 +105,76 @@
 <script>
   export default {
     mounted() {
-      document.body.style.background = 'var(--gravity)'
+      var html = document.documentElement
+      var body = document.body
 
-      gsap.from('.gsap', {
+      var scroller = {
+        target: document.querySelector("#scroll-container"),
+        ease: 0.05, // <= scroll speed
+        endY: 0,
+        y: 0,
+        resizeRequest: 1,
+        scrollRequest: 0,
+      }
+
+      var requestId = null;
+
+      TweenLite.set(scroller.target, {
+        rotation: 0.01,
+        force3D: true
+      })
+
+      window.addEventListener("load", onLoad)
+
+      function onLoad() {
+        updateScroller()
+        window.focus()
+        window.addEventListener("resize", onResize)
+        document.addEventListener("scroll", onScroll)
+      }
+
+      function updateScroller() {
+
+        var resized = scroller.resizeRequest > 0
+
+        if (resized) {
+          var height = scroller.target.clientHeight
+          body.style.height = height + "px"
+          scroller.resizeRequest = 0
+        }
+
+        var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0
+
+        scroller.endY = scrollY
+        scroller.y += (scrollY - scroller.y) * scroller.ease
+
+        if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+          scroller.y = scrollY
+          scroller.scrollRequest = 0
+        }
+
+        TweenLite.set(scroller.target, {
+          y: -scroller.y
+        });
+
+        requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null
+      }
+
+      function onScroll() {
+        scroller.scrollRequest++
+        if (!requestId) {
+          requestId = requestAnimationFrame(updateScroller)
+        }
+      }
+
+      function onResize() {
+        scroller.resizeRequest++
+        if (!requestId) {
+          requestId = requestAnimationFrame(updateScroller)
+        }
+      }
+
+      gsap.from('img', {
         opacity: 0,
         y: 200,
         skewY: 10,
@@ -95,7 +185,7 @@
     },
 
     beforeDestroy() {
-      document.body.style.background = 'var(--stone)'
+      // document.body.style.background = 'var(--stone)'
     },
 
     components: {  }
