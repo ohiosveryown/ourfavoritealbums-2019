@@ -9,8 +9,7 @@
     <h2>I,I by Bon Iver—Expiremental</h2>
     <img
       :class = "{ active: hover }"
-    src="~/static/img/about1.png" alt="">
-    <img src="~/static/img/about1.png" alt="">
+      src="~/static/img/about1.png" alt="">
   </li>
 </template>
 
