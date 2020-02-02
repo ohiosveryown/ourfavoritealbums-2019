@@ -6,7 +6,7 @@
       <div class="nav--title tac canela">Albums <span>of the</span> YEAR</div>
     </nav>
 
-    <main class="mt-5">
+    <main>
       <header class="header stone mb-5">
         <h2 class="gsap headline infrared mb-3">My Intro to Let You Know</h2>
         <p class="gsap display mb-4">Albums of the Year is a communal project built around music & friendship established in 2018.</p>
@@ -57,6 +57,7 @@
   header {
     @include breakpoint(md) { width: grid-width(7); }
     // p + p { text-indent: 2ch; }
+    h2 { padding-top: 11.2rem; }
   }
 
   aside {
