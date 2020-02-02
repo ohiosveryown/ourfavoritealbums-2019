@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <div id="luxy" class="about-wrapper width">
+  <div id="luy" class="about-wrapper width">
 
     <nav class="mt-4 stone">
       <div class="nav--left steinbeck">
@@ -36,9 +36,7 @@
     </main>
 
     <aside class="gsap stone">
-      <h3 class="headline infrared mb-3">
-        <a name = "all-lists"
-      </h3>
+      <h3 class="headline infrared mb-3">All Lists</h3>
 
       <li class="mb-3">
         <nuxt-link to = '/lists/matt'><h2 class="mb-0 content-width respira">Matt's Top 5 Albums</h2></nuxt-link>
@@ -137,6 +135,7 @@
   }
 
   header {
+    border: 4px solid #fff;
     @include breakpoint(md)  { width: grid-width(6); }
     @include breakpoint(mdl) { width: grid-width(8); }
   }
