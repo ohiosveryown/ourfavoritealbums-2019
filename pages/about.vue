@@ -2,21 +2,21 @@
 <template>
   <div class="debug index-wrapper width">
 
-    <h1>Home</h1>
-    <n-link to = '/about'>Go to about</n-link>
+    <h1>About</h1>
+    <n-link to = '/'>Go to index</n-link>
 
     <div class="content">
       <div class="img-container">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-10.jpg" alt="">
+        <img src="~static/img/about1.png" alt="">
       </div>
       <div class="img-container">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-14.jpg" alt="">
+        <img src="~static/img/about1.png" alt="">
       </div>
       <div class="img-container">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-15.jpg" alt="">
+        <img src="~static/img/about1.png" alt="">
       </div>
       <div class="img-container">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/splash-16.jpg" alt="">
+        <img src="~static/img/about1.png" alt="">
       </div>
       <!--  REPEAT  -->
 
@@ -56,20 +56,6 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-.content {
-  width: 60%;
-  padding-top:50px;
-}
-
-.img-container {
-  margin: 0 0 50px;
-
-  img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
-}
 
 </style>
 
@@ -79,9 +65,9 @@
   import { scrolling } from '~/logic/forApp.js'
   export default {
     mounted() {
-      // smooth scrolling
+
       scrolling()
-      // enter animation
+
       gsap.from('img', {
         opacity: 0,
         y: 200,
@@ -91,7 +77,7 @@
         ease: Power2.easeInOut
       })
     },
-    // leaving 👋🏼
+
     beforeDestroy() {
       // document.body.style.background = 'var(--stone)'
     },

@@ -36,6 +36,8 @@ body {
   background: var(--stone);
   color: var(--gravity);
   font: normal 1.6rem/1.4 var(--system-ui);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, a, span, blockquote, caption, ul, li, img, button, section, article, figure, main, footer {
@@ -54,3 +56,25 @@ video, img { display: block; max-width: 100%; height: auto; }
 img        { vertical-align: top; }
 ul         { list-style-type: none; -webkit-margin-before: 0; -webkit-margin-after: 0; }
 // :focus     { outline: 0; }
+
+// for scrolling
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
