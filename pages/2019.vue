@@ -23,9 +23,15 @@
         />
       </section>
 
-      <article class="anim--enter mb-4">
+      <article class="anim--enter mb-8">
         <p class="body">2019 was a great year for music. To catalog this period of sonic mastery, myself and a group of friends want to share our favorites with you. This site was designed and built by me, <a class="link" href="https://twitter.com/cmykw_" target="_blank">Matt</a> – and you can view the source <a class="link" href="https://github.com/ohiosveryown/ourfavoritealbums-2019" target="_blank">here</a>.</p>
         <p class="body">The site is built on vue, nuxtjs and friendship. The type is set in Respira by Sharp Type and Steinbeck by The Temporary State.</p>
+      </article>
+
+      <article class="anim--enter mb-4">
+        <h2 class="headline infrared mb-3">The Compendium Playlist</h2>
+        <p class="mb-4 body">Crafted by selecting the favorite song from each individual's favorite album, the compilation playlist is your tl:dr for Our Favorite Albums.</p>
+        <iframe src="https://open.spotify.com/embed/playlist/51W4U61e2M9WDHSYvhHche" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </article>
     </main>
 
@@ -140,17 +146,20 @@
     @include breakpoint(mdl) { width: grid-width(8); }
   }
 
-  p {
+  p, iframe {
     @include breakpoint(md)  { width: grid-width(8); }
     @include breakpoint(mdl) { width: grid-width(5); }
   }
 
   p + p { text-indent: 4ch; }
 
-
   aside {
     margin-bottom: 8rem;
-    @include breakpoint(mdl) { margin: 0 0 12rem grid-width(7); }
+
+    @include breakpoint(mdl) {
+       margin: 0 0 0 grid-width(7);
+       transform: translateY(-40rem);
+    }
 
     h2 {
       font-size: 1.8rem;
