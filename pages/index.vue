@@ -69,6 +69,11 @@
     }
   }
 
+  .logotype {
+    margin: 0 auto;
+    @include breakpoint(md) { margin: inherit; }
+  }
+
 </style>
 
 
