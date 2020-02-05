@@ -10,14 +10,14 @@
 
     <main>
       <header class="header mb-5">
-        <h2 class="anim--enter headline infrared mb-3">About</h2>
+        <h2 class="anim--enter headline infrared mb-1">About</h2>
         <p class="anim--enter display stone mb-4">Albums of the Year is a communal project built around music & friendship established in 2018.</p>
         <p class="anim--enter display stone mb-4">To catalog the sonic mastery that is music, myself and a group of friends want to share our favorites with you.</p>
         <p class="anim--enter display stone mb-2">This site was designed and built by me, <a href="https://twitter.com/cmykw_" target="_blank" class="link">Matt</a>. Get started by selecting a year <span class="sm">below</span><span class="not-sm">to the right</span>, or travel <n-link class="link" to = '/2019'>back to 2019</n-link> 🤙🏼.</p>
       </header>
 
       <section>
-        <h3 class="anim--enter headline mb-2 infrared">By the Year</h3>
+        <h3 class="anim--enter headline mb-1 infrared">By the Year</h3>
         <ul class="anim--enter stone">
           <li class="mb-4">
             <h2 class="mb-0 link steinbeck">
@@ -52,7 +52,7 @@
   main {
     display: flex;
     flex-direction: column;
-    padding-bottom: 11.2rem;
+    padding: 11.2rem 0;
     @include breakpoint(md) { flex-direction: row; }
   }
 
