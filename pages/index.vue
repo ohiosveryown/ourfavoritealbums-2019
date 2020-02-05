@@ -74,6 +74,9 @@
     @include breakpoint(md) { margin: inherit; }
   }
 
+  .sm { display: inline; @include breakpoint(md) { display: none; }}
+  .not-sm { display: none; @include breakpoint(md) { display: inline; }}
+
 </style>
 
 
