@@ -31,7 +31,7 @@
   position: relative;
   margin: 0 auto;
   max-width: var(--max-width);
-  width: 88vw;
+  width: 90vw;
 }
 
 // general
@@ -42,14 +42,14 @@
   // mix-blend-mode: difference;
 }
 
-.outline-stone {
+.outline--stone {
   color: transparent;
   text-stroke: 1px var(--stone);
   -webkit-text-stroke: 1px var(--stone);
   // mix-blend-mode: difference;
 }
 
-.outline-infrared {
+.outline--infrared {
   color: transparent;
   text-stroke: 1px var(--infrared);
   -webkit-text-stroke: 1px var(--infrared);

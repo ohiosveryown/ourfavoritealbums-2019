@@ -1,13 +1,6 @@
 <!-- layout -->
 <template>
-  <!-- <div class="viewport">
-    <div class="scroll-container">
-      <nuxt/>
-    </div>
-  </div> -->
-  <div id="luxy">
-    <nuxt/>
-  </div>
+  <nuxt/>
 </template>
 
 

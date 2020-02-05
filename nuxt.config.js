@@ -24,7 +24,7 @@ export default {
   ],
   // plugins
   plugins: [
-    { src: '~plugins/luxy.js', ssr: false },
+    { src: '~plugins/scrollbar.js', ssr: false },
   ],
   // nuxt js modules
   modules: [
