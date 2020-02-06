@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <nav>
+  <nav class="">
 
     <ul>
       <li class="steinbeck"><slot name = 'left'/></li>
@@ -41,7 +41,7 @@
     text-align: center;
   }
 
-  span { font-style: italic; }
+  // .italic { font-style: italic; }
 
 </style>
 

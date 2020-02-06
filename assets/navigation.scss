@@ -27,5 +27,3 @@
     text-align: right;
     @include breakpoint(md) { display: inherit; }
   }
-
-  span { font-style: italic; }

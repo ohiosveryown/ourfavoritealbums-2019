@@ -4,7 +4,7 @@
 
 
     <Navigation class="anim--enter-fade stone">
-      <template v-slot:center>Albums <span>of the</span> Year</template>
+      <template v-slot:center>Albums <span class="italic">of the</span> Year</template>
     </Navigation>
 
 
@@ -34,7 +34,7 @@
 
         <Logotype
           class = "anim--enter outline--stone"
-          style = "fill: var(--stone);"
+          style = "fill: var(--infrared);"
           title = 'aoty'
         />
       </section>

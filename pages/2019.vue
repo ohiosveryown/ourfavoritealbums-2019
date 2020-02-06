@@ -6,7 +6,7 @@
     <Navigation class="stone">
       <template v-slot:left>20</template>
       <template v-slot:center>
-        <n-link to = '/'>Albums <span>of the</span> Year</n-link>
+        <n-link to = '/'>Albums <span class="italic">of the</span> Year</n-link>
       </template>
       <template v-slot:right>19</template>
     </Navigation>
@@ -24,21 +24,31 @@
               <figure class="kobe"></figure>
             </div>
           </h2>
+
+          <h3 class="anim--enter playlist headline infrared mb-1">The Compendium Playlist</h3>
+          <h2 class="anim--enter playlist mb-4 body stone">Crafted by selecting the favorite song from each individual's favorite album, the compilation playlist is your tl:dr for Our Favorite Albums.</h2>
+          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E9JGyJApmKNfx" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </article>
 
         <section class="header--right">
           <Logotype
             class = "anim--enter outline--stone"
-            style = "fill: red;"
+            style = "fill: var(--infrared);"
             title = '2019'
           />
 
           <h3 class="list--header anim--enter headline infrared mb-1">2019 Lists</h3>
 
-          <ul class="">
+          <ul>
             <li class="anim--enter mb-3">
               <nuxt-link to = '/lists/matt'>
-                <h2 class="mb-0 link content-width respira">Matt's Top 5 Albums</h2>
+                <h2 class="mb-0 link content-width respira">
+                  <Avatar title = "Matt's Top 5 Albums">
+                    <template v-slot:avatar>
+                      <figure class="matt"></figure>
+                    </template>
+                  </Avatar>
+                </h2>
               </nuxt-link>
               <a
                 class="steinbeck op-5"
@@ -50,13 +60,37 @@
 
             <li class="anim--enter mb-3">
               <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">Caleb's Top 5 Albums</h2>
+                <h2 class="mb-0 link content-width respira">
+                  <Avatar title = "Calebs's Top 5 Albums">
+                    <template v-slot:avatar>
+                      <figure class="caleb"></figure>
+                    </template>
+                  </Avatar>
+                </h2>
               </nuxt-link>
               <a
                 class="steinbeck op-5"
                 href="https://www.instagram.com/calebb"
                 target="_blank">
                 @calebb
+              </a>
+            </li>
+
+            <li class="anim--enter mb-3">
+              <nuxt-link to = '/lists/matt'>
+                <h2 class="mb-0 link content-width respira">
+                  <Avatar title = "Matt's Top 5 Albums">
+                    <template v-slot:avatar>
+                      <figure class="matt"></figure>
+                    </template>
+                  </Avatar>
+                </h2>
+              </nuxt-link>
+              <a
+                class="steinbeck op-5"
+                href="https://twitter.com/cmykw_"
+                target="_blank">
+                @cmykw_
               </a>
             </li>
 
@@ -130,9 +164,6 @@
       </section>
     </main>
 
-    <!-- <div class="easter-egg">
-      <img src="~/static/img/kobe.gif" alt="">
-    </div> -->
 
   </div>
 </template>
@@ -155,8 +186,7 @@
     }
   }
 
-
-  article {
+  article, iframe {
     @include breakpoint(md) {
       margin-right: grid-width(1);
       width: grid-width(8);
@@ -166,6 +196,11 @@
   }
 
   h2 + h2 { text-indent: 3ch; }
+
+  .playlist, iframe {
+    display: none;
+    @include breakpoint(mdl) { display: inherit; }
+  }
 
   .wrapper { display: inline; position: relative; }
 
@@ -180,15 +215,15 @@
     @include breakpoint(md) {
       opacity: 1;
       transform: translate(-50%,-50%) scale(1);
-      transition: all 600ms cubic-bezier(0.2,-2,0,4);
+      transition: all 100ms var(--inout);
     }
   }
 
   figure {
-    position: absolute;
-    top: 50%; left: 50%;
-    z-index: var(--zmin);
     display: inline;
+    position: absolute;
+    z-index: var(--zmin);
+    top: 50%; left: 50%;
     opacity: 0;
     transform: translate(-50%,-50%) scale(0.94);
     transition: all 150ms ease;
@@ -198,6 +233,20 @@
   figure.kobe {
     width: 320px; height: 180px;
     background: url('../static/img/kobe.gif') no-repeat center center;
+    background-blend-mode: soft-light;
+    background-size: cover;
+  }
+
+  figure.matt {
+    width: 200px; height: 200px;
+    background: url('../static/img/matt.jpg') no-repeat center center;
+    background-blend-mode: soft-light;
+    background-size: cover;
+  }
+
+  figure.caleb {
+    width: 200px; height: 200px;
+    background: url('../static/img/caleb.jpg') no-repeat center center;
     background-blend-mode: soft-light;
     background-size: cover;
   }
@@ -213,11 +262,8 @@
   }
 
   .list--header, ul {
-    @include breakpoint(md) { margin-left: grid-width(-5); }
+    @include breakpoint(mdl) { margin-left: grid-width(-5); }
   }
-
-
-
 
 </style>
 
@@ -227,6 +273,7 @@
   import { animateEnter } from '~/logic/animate.js'
   import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
+  import Avatar from '~/components/Avatar'
 
   export default {
 
@@ -238,7 +285,7 @@
       animateEnter()
     },
 
-    components: { Navigation, Logotype }
+    components: { Navigation, Logotype, Avatar }
 
   }
 </script>
