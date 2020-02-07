@@ -14,7 +14,10 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-  div { margin: 4rem auto 11.2rem; }
+  div {
+    margin: 4rem auto 5.6rem;
+    @include breakpoint(md) { margin: 4rem auto 11.2rem; }
+  }
 
   h3 {
     font: 1.8rem/1.6 'Steinbeck', var(--system-ui);
