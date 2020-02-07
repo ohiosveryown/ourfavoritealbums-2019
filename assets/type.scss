@@ -19,6 +19,11 @@
 .canela { font-family: 'Canela', var(--system-ui); }
 .steinbeck { font-family: 'Steinbeck', var(--system-ui); }
 
+.display--lg {
+  font: 10vw/1.1 'Respira', var(--system-ui);
+  @include breakpoint(lg) { font-size: 11rem; }
+}
+
 .display {
   font: 2.2rem/1.6 'Respira', var(--system-ui);
   @include breakpoint(md) { font-size: 4.4rem; }

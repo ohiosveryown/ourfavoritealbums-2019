@@ -1,9 +1,9 @@
 <!-- layout -->
 <template>
-  <div class="index--wrapper width">
+  <div ref='all' class="index--wrapper width">
 
 
-    <Navigation class="anim--enter-fade stone">
+    <Navigation class="anim--fade-in stone">
       <template v-slot:center>Albums <span class="italic">of the</span> Year</template>
     </Navigation>
 
@@ -82,7 +82,7 @@
 
 <!-- logic -->
 <script>
-  import { animateEnter } from '~/logic/animate.js'
+  import { animateEnter, fadeIn } from '~/logic/animate.js'
   import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
 
@@ -94,6 +94,15 @@
 
     mounted() {
       animateEnter()
+      fadeIn()
+    },
+
+    beforeDestroy() {
+      // const all = document.querySelector('main')
+      // all.style.opacity = 0
+      // all.style.transition = 'opacity 300ms ease'
+      this.$refs.all.style.opacity = 0
+      this.$refs.all.style.transition = 'opacity 300ms ease'
     },
 
     components: { Navigation, Logotype }

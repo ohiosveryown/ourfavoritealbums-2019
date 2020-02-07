@@ -9,4 +9,13 @@ const animateEnter = () => {
   })
 }
 
-export { animateEnter }
+const fadeIn = () => {
+  gsap.from('.anim--fade-in', {
+    opacity: 0,
+    stagger: .075,
+    duration: 1,
+    ease: Power2.easeInOut
+  })
+}
+
+export { animateEnter, fadeIn }

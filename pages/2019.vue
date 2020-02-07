@@ -1,9 +1,9 @@
 <!-- layout -->
 <template>
-  <div class="index--wrapper width">
+  <div ref='all' class="index--wrapper width">
 
 
-    <Navigation class="stone">
+    <Navigation class="anim--fade-in stone">
       <template v-slot:left>20</template>
       <template v-slot:center>
         <n-link to = '/'>Albums <span class="italic">of the</span> Year</n-link>
@@ -27,7 +27,7 @@
 
           <h3 class="anim--enter playlist headline infrared mb-1">The Compendium Playlist</h3>
           <h2 class="anim--enter playlist mb-4 body stone">Crafted by selecting the favorite song from each individual's favorite album, the compilation playlist is your tl:dr for Our Favorite Albums.</h2>
-          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E9JGyJApmKNfx" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe class="anim--enter" src="https://open.spotify.com/embed/playlist/37i9dQZF1E9JGyJApmKNfx" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </article>
 
         <section class="header--right">
@@ -133,7 +133,7 @@
 
 <!-- logic -->
 <script>
-  import { animateEnter } from '~/logic/animate.js'
+  import { animateEnter, fadeIn } from '~/logic/animate.js'
   import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
   import Avatar from '~/components/Avatar'
@@ -148,14 +148,23 @@
 
     mounted() {
       animateEnter()
+      fadeIn()
     },
 
     beforeDestroy() {
       if ( this.$route.path === '/' ) {
-
+        this.$refs.all.style.opacity = 0
+        this.$refs.all.style.transition = 'opacity 300ms ease'
       } else {
         document.body.style.background = 'var(--stone)'
         document.body.style.transition = 'background 300ms ease'
+
+        // const all = document.querySelector('main')
+        // all.style.opacity = 0
+        // all.style.transition = 'opacity 300ms ease'
+
+        this.$refs.all.style.opacity = 0
+        this.$refs.all.style.transition = 'opacity 300ms ease'
       }
     }
 
