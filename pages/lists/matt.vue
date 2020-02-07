@@ -64,7 +64,7 @@
           <n-link to = '/'>
             <ListItem
               kicker = '01'
-              title = 'IGOR–Tyler, the Creator'
+              title = 'Tyler, the Creator—IGOR'
               subtitle = 'IGOR by Tyler, the Creator'
             />
           </n-link>

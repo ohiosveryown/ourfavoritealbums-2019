@@ -21,6 +21,15 @@
     @include breakpoint(md) { font-size: 2.2rem; }
   }
 
+  @media (pointer: fine) {
+    h1:hover {
+      // mix-blend-mode: difference;
+      color: transparent;
+      text-stroke: 2px var(--gravity);
+      -webkit-text-stroke: 2px var(--gravity);
+    }
+  }
+
 </style>
 
 
