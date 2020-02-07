@@ -103,7 +103,8 @@
     background: url('https://raw.githubusercontent.com/ohiosveryown/ourfavoritealbums-2019/master/static/img/fuzzys.jpg'), var(--stone) no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    transform: translateY(-24rem);
+    // transform: translateY(-24rem);
+    margin-top: -24rem;
     @include breakpoint(lg) { height: 80rem; }
   }
 
@@ -116,7 +117,7 @@
     width: 100vw;
     background: #000;
     color: var(--stone);
-    transform: translateY(-24rem);
+    // transform: translateY(-24rem);
   }
 
 </style>
