@@ -70,6 +70,8 @@
           </n-link>
         </li>
       </ul>
+
+      <section class="fuzzys"></section>
     </main>
 
   </div>
@@ -88,6 +90,11 @@
     align-items: center;
     margin: 0 auto;
     padding: 8rem 0;
+  }
+
+  .fuzzys {
+    background: url('../static/img/fuzzys.png') no-repeat;
+    background-size: cover;
   }
 
 </style>
