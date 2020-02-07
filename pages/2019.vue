@@ -52,9 +52,7 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-  main {
-    padding: 11.2rem 0;
-  }
+  main { padding: 11.2rem 0; }
 
   header {
     display: flex;
@@ -142,6 +140,8 @@
 
   export default {
 
+    components: { Navigation, Logotype, Avatar },
+
     beforeMount() {
       document.body.style.background = 'var(--gravity)'
     },
@@ -150,7 +150,14 @@
       animateEnter()
     },
 
-    components: { Navigation, Logotype, Avatar }
+    beforeDestroy() {
+      if ( this.$route.path === '/' ) {
+
+      } else {
+        document.body.style.background = 'var(--stone)'
+        document.body.style.transition = 'background 300ms ease'
+      }
+    }
 
   }
 </script>

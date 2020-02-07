@@ -3,7 +3,7 @@
   <ul>
     <h3 class="list--header anim--enter headline infrared mb-2">2019 Lists</h3>
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/matt'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Matt's Top 5 Albums</h2>
           <figure class="matt"></figure>
