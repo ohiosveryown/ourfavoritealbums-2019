@@ -73,9 +73,10 @@
 
       <section class="fuzzys"/>
 
-      <section class="next tac">
-        <h1>you're next</h1>
-      </section>
+      <Next
+        kicker = 'Playing Next'
+        title = "Chad's Top 5"
+      />
     </main>
 
   </div>
@@ -108,18 +109,6 @@
     @include breakpoint(lg) { height: 80rem; }
   }
 
-  .next {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 11.2rem 0;
-    width: 100vw;
-    background: #000;
-    color: var(--stone);
-    // transform: translateY(-24rem);
-  }
-
 </style>
 
 
@@ -129,10 +118,11 @@
   import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
   import ListItem from '~/components/ListItem'
+  import Next from '~/components/Next'
 
 
   export default {
-    components: { Navigation, Logotype, ListItem },
+    components: { Navigation, Logotype, ListItem, Next },
 
     beforeMount() {
       // document.body.style.background = 'var(--gravity)'
