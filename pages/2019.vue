@@ -37,131 +37,10 @@
             title = '2019'
           />
 
-          <h3 class="list--header anim--enter headline infrared mb-1">2019 Lists</h3>
-
-          <ul>
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/lists/matt'>
-                <h2 class="mb-0 link content-width respira">
-                  <Avatar title = "Matt's Top 5 Albums">
-                    <template v-slot:avatar>
-                      <figure class="matt"></figure>
-                    </template>
-                  </Avatar>
-                </h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://twitter.com/cmykw_"
-                target="_blank">
-                @cmykw_
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">
-                  <Avatar title = "Calebs's Top 5 Albums">
-                    <template v-slot:avatar>
-                      <figure class="caleb"></figure>
-                    </template>
-                  </Avatar>
-                </h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://www.instagram.com/calebb"
-                target="_blank">
-                @calebb
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/lists/matt'>
-                <h2 class="mb-0 link content-width respira">
-                  <Avatar title = "Matt's Top 5 Albums">
-                    <template v-slot:avatar>
-                      <figure class="matt"></figure>
-                    </template>
-                  </Avatar>
-                </h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://twitter.com/cmykw_"
-                target="_blank">
-                @cmykw_
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">Chad's Top 5 Albums</h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://twitter.com/chadurbanick"
-                target="_blank">
-                @chadurbanick
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">Jordan's Top 5 Albums</h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://jordanjung.com"
-                target="_blank">
-                jordanjung.com
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">Kristie's Top 5 Albums</h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://www.instagram.com/kristiefeltner"
-                target="_blank">
-                @kristiefeltner
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">Mirely's Top 5 Albums</h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://www.instagram.com/mirelycab"
-                target="_blank">
-                @mirelycab
-              </a>
-            </li>
-
-            <li class="anim--enter mb-3">
-              <nuxt-link to = '/'>
-                <h2 class="mb-0 link content-width respira">Roy's Top 5 Albums</h2>
-              </nuxt-link>
-              <a
-                class="steinbeck op-5"
-                href="https://www.instagram.com/Old_Orleans"
-                target="_blank">
-                @Old_Orleans
-              </a>
-            </li>
-          </ul>
-
+          <Avatar/>
         </section>
 
       </header>
-
-      <section>
-
-      </section>
     </main>
 
 
@@ -233,20 +112,6 @@
   figure.kobe {
     width: 320px; height: 180px;
     background: url('../static/img/kobe.gif') no-repeat center center;
-    background-blend-mode: soft-light;
-    background-size: cover;
-  }
-
-  figure.matt {
-    width: 200px; height: 200px;
-    background: url('../static/img/matt.jpg') no-repeat center center;
-    background-blend-mode: soft-light;
-    background-size: cover;
-  }
-
-  figure.caleb {
-    width: 200px; height: 200px;
-    background: url('../static/img/caleb.jpg') no-repeat center center;
     background-blend-mode: soft-light;
     background-size: cover;
   }
