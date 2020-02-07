@@ -71,7 +71,11 @@
         </li>
       </ul>
 
-      <section class="fuzzys"></section>
+      <section class="fuzzys"/>
+
+      <section class="next tac">
+        <h1>you're next</h1>
+      </section>
     </main>
 
   </div>
@@ -89,12 +93,28 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 8rem 0 11.2rem;
   }
 
   .fuzzys {
-    background: url('../static/img/fuzzys.png') no-repeat;
+    position: relative;
+    z-index: 999;
+    width: 100vw; height: 60rem;
+    background: url('https://raw.githubusercontent.com/ohiosveryown/ourfavoritealbums-2019/master/static/img/fuzzys.jpg'), var(--stone) no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
+    @include breakpoint(lg) { height: 80rem; }
+  }
+
+  .next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11.2rem 0;
+    width: 100vw;
+    background: #000;
+    color: var(--stone);
   }
 
 </style>
