@@ -28,10 +28,13 @@
         <li class="anim--enter">
           <div class="imgs">
             <img class="img" src="~/static/img/matt/kota/01.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/01.jpg" alt="">
             <img class="img" src="~/static/img/matt/kota/02.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/02.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
             <img class="img" src="~/static/img/matt/kota/04.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/04.jpg" alt="">
           </div>
           <n-link to = '#'>
             <ListItem
@@ -109,7 +112,7 @@
   .imgs {
     position: absolute;
     z-index: var(--zmin);
-    top: -50%; right: 0; left: 0;
+    top: 0%; right: 0; left: 0;
     margin: auto;
     width: 100%; height: 200%;
 
@@ -118,32 +121,19 @@
       transform-origin: top;
     }
 
-    img:nth-of-type(1) {
-      top: 0; left: 0;
-      width: 21.2rem; height: auto;
-    }
+    img:nth-of-type(1) { width: 21.2rem; height: auto; }
+    img:nth-of-type(2) { width: 24rem; height: auto; }
+    img:nth-of-type(3) { width: 15.6rem; height: auto; }
+    img:nth-of-type(4) { width: 15.6rem; height: auto; }
+    img:nth-of-type(5) { width: 15.6rem; height: auto; }
+    img:nth-of-type(6) { width: 21.2rem; height: auto; }
+    img:nth-of-type(7) { width: 24rem; height: auto; }
+    img:nth-of-type(8) { width: 15.6rem; height: auto; }
 
-    img:nth-of-type(2) {
-      bottom: 4%; left: 12%;
-      width: 24rem; height: auto;
-    }
-
-    img:nth-of-type(3) {
-      top: 20%; right: 0%;
-      width: 15.6rem; height: auto;
-    }
-
-    img:nth-of-type(4) {
-      bottom: 20%; right: 12%;
-      width: 15.6rem; height: auto;
-    }
-
-    img:nth-of-type(5) {
-      bottom: 16%; right: 8%;
-      width: 15.6rem; height: auto;
-    }
 
   }
+
+  .list--wrapper { overflow-x: hidden; }
 
   .logotype { margin: 0 auto; }
   @media(pointer: fine) { .logotype { mix-blend-mode: difference; }}
@@ -169,6 +159,8 @@
     padding: 0rem 0 11.2rem;
     @include breakpoint(md) { margin-top: 1.6rem; }
   }
+
+  // li { overflow-x: hidden; }
 
   .fuzzys {
     position: relative;
@@ -217,29 +209,37 @@
 
       if (mq.matches) {
         const trigger = document.querySelectorAll('.list-item')[0]
-        gsap.set('img', {
+        gsap.set('.img', {
           opacity: 0,
+          y: '0',
+          x: '0',
         })
 
         trigger.addEventListener('mouseenter', () => {
-          gsap.to('.img', {
-            opacity: 1,
-            y: 0,
+          const tl = gsap.timeline()
+          tl.to('.img', {
+            // y: 0,
+            x: 'random(-1000vw, 1000vw)',
+            y: 'random(-100vh, 100vh)',
             scale: 1,
+            duration: .1,
+          })
+
+          tl.to('.img', {
+            opacity: 1,
             stagger: .075,
-            duration: .6,
-            ease: Power2.easeInOut
+            duration: .56,
+            ease: Power2.easeInOut,
           })
         })
 
         trigger.addEventListener('mouseleave', () => {
           const tl = gsap.timeline()
-
           tl.to('.img', {
             opacity: 0,
             scaleY: 1.5,
             scaleX: .75,
-            y: '6rem',
+            y: '204%',
             stagger: .056,
             duration: .4,
             ease: Power2.easeInOut
@@ -248,8 +248,9 @@
         tl.to('.img', {
             scaleY: 1,
             scaleX: 1,
-            y: '0',
-            duration: .1,
+            x: 'random(-1000vw, 1000vw)',
+            y: 'random(-100vh, 100vh)',
+            duration: .01,
           })
         })
       } else {
