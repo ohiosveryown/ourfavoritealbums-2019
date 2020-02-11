@@ -108,10 +108,10 @@
 
     img {
       position: absolute;
-      opacity: 0;
-      transform: translateY(2.4rem) scaleY(1.5);
+      // opacity: 0;
+      // transform: translateY(2.4rem) scaleY(1.5);
       transform-origin: top;
-      }
+    }
 
     img:nth-of-type(1) {
       top: 0; left: 0;
@@ -211,6 +211,12 @@
       })
 
       const trigger = document.querySelectorAll('.list-item')[0]
+      gsap.set('img', {
+        opacity: 0,
+        // y: '2.4rem',
+        // scaleY: 1.5,
+      })
+
       trigger.addEventListener('mouseenter', () => {
         gsap.to('.img', {
           opacity: 1,
@@ -223,13 +229,21 @@
       })
 
       trigger.addEventListener('mouseleave', () => {
-        gsap.to('.img', {
+        const tl = gsap.timeline()
+
+        tl.to('.img', {
           opacity: 0,
           scaleY: 1.5,
           y: '2.4rem',
           stagger: .056,
           duration: .4,
           ease: Power2.easeInOut
+        })
+
+       tl.to('.img', {
+          scaleY: 1,
+          y: '0',
+          duration: .1,
         })
       })
 
