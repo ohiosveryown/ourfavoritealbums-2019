@@ -13,7 +13,7 @@
     </Navigation>
 
 
-    <header class="pt-9">
+    <header id="fixed" class="pt-9">
       <Logotype
         class = "anim--enter outline--infrared"
         style = "fill: var(--gravity); transform: scale(.72)"
@@ -23,10 +23,16 @@
       <img ref='avatar' class="avatar" src="~/static/img/avatars/matt.jpg" alt="matt">
     </header>
 
-
     <main class="width">
       <ul>
         <li class="anim--enter">
+          <div class="imgs">
+            <img class="img" src="~/static/img/avatars/matt.jpg" alt="">
+            <img class="img" src="~/static/img/avatars/caleb.jpg" alt="">
+            <img class="img" src="~/static/img/avatars/chad.jpg" alt="">
+            <img class="img" src="~/static/img/avatars/kristie.jpg" alt="">
+            <img class="img" src="~/static/img/avatars/kristie.jpg" alt="">
+          </div>
           <n-link to = '/'>
             <ListItem
               kicker = '05'
@@ -93,8 +99,45 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-  .list--wrapper {
-    position: relative;
+  .imgs {
+    position: absolute;
+    z-index: var(--zmin);
+    top: -50%; right: 0; left: 0;
+    margin: auto;
+    width: 100%; height: 200%;
+
+    img {
+      position: absolute;
+      opacity: 0;
+      transform: translateY(2.4rem) scaleY(1.5);
+      transform-origin: top;
+      }
+
+    img:nth-of-type(1) {
+      top: 0; left: 0;
+      width: 21.2rem; height: auto;
+    }
+
+    img:nth-of-type(2) {
+      bottom: 4%; left: 12%;
+      width: 24rem; height: auto;
+    }
+
+    img:nth-of-type(3) {
+      top: 20%; right: 0%;
+      width: 15.6rem; height: auto;
+    }
+
+    img:nth-of-type(4) {
+      bottom: 20%; right: 12%;
+      width: 15.6rem; height: auto;
+    }
+
+    img:nth-of-type(5) {
+      bottom: 16%; right: 8%;
+      width: 15.6rem; height: auto;
+    }
+
   }
 
   .logotype {
@@ -159,12 +202,37 @@
       animateEnter()
       fadeIn()
       // logotype / avatar hover follow
+      const avatar = document.querySelector('.avatar')
       document.addEventListener('mousemove', (e) => {
-        this.$refs.avatar.setAttribute(
+        avatar.setAttribute(
           'style',
           `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
         )
       })
+
+      const trigger = document.querySelectorAll('.list-item')[0]
+      trigger.addEventListener('mouseenter', () => {
+        gsap.to('.img', {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: .075,
+          duration: .6,
+          ease: Power2.easeInOut
+        })
+      })
+
+      trigger.addEventListener('mouseleave', () => {
+        gsap.to('.img', {
+          opacity: 0,
+          scaleY: 1.5,
+          y: '2.4rem',
+          stagger: .056,
+          duration: .4,
+          ease: Power2.easeInOut
+        })
+      })
+
     },
 
   }

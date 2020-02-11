@@ -8,6 +8,6 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
     damping: 0.03,
     renderByPixels: true,
     continuousScrolling: true,
+    // syncCallbacks: true,
   })
 }
-

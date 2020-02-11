@@ -3,7 +3,7 @@
   <div class="tac">
 
     <h3 class="mb-2 headline infrared">{{ kicker }}</h3>
-    <h1 class="mb-2 display--lg">{{ title }}</h1>
+    <h1 class="list-item mb-2 display--lg">{{ title }}</h1>
     <h2 class="body">{{ subtitle }}</h2>
 
   </div>
