@@ -145,10 +145,8 @@
 
   }
 
-  .logotype {
-    margin: 0 auto;
-    mix-blend-mode: difference;
-  }
+  .logotype { margin: 0 auto; }
+  @media(pointer: fine) { .logotype { mix-blend-mode: difference; }}
 
   .avatar {
     position: absolute;
@@ -215,40 +213,44 @@
         )
       })
       // list item hover (5)
-      const trigger = document.querySelectorAll('.list-item')[0]
-      gsap.set('img', {
-        opacity: 0,
-      })
+      const mq = matchMedia( '(pointer:fine)' )
 
-      trigger.addEventListener('mouseenter', () => {
-        gsap.to('.img', {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          stagger: .075,
-          duration: .6,
-          ease: Power2.easeInOut
+      if (mq.matches) {
+        const trigger = document.querySelectorAll('.list-item')[0]
+        gsap.set('img', {
+          opacity: 0,
         })
-      })
 
-      trigger.addEventListener('mouseleave', () => {
-        const tl = gsap.timeline()
+        trigger.addEventListener('mouseenter', () => {
+          gsap.to('.img', {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            stagger: .075,
+            duration: .6,
+            ease: Power2.easeInOut
+          })
+        })
+
+        trigger.addEventListener('mouseleave', () => {
+          const tl = gsap.timeline()
+
+          tl.to('.img', {
+            opacity: 0,
+            scaleY: 1.5,
+            y: '2.4rem',
+            stagger: .056,
+            duration: .4,
+            ease: Power2.easeInOut
+          })
 
         tl.to('.img', {
-          opacity: 0,
-          scaleY: 1.5,
-          y: '2.4rem',
-          stagger: .056,
-          duration: .4,
-          ease: Power2.easeInOut
+            scaleY: 1,
+            y: '0',
+            duration: .1,
+          })
         })
-
-       tl.to('.img', {
-          scaleY: 1,
-          y: '0',
-          duration: .1,
-        })
-      })
+      }
 
     },
 
