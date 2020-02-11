@@ -27,13 +27,13 @@
       <ul>
         <li class="anim--enter">
           <div class="imgs">
-            <img class="img" src="~/static/img/avatars/matt.jpg" alt="">
-            <img class="img" src="~/static/img/avatars/caleb.jpg" alt="">
-            <img class="img" src="~/static/img/avatars/chad.jpg" alt="">
-            <img class="img" src="~/static/img/avatars/kristie.jpg" alt="">
-            <img class="img" src="~/static/img/avatars/kristie.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/01.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/02.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/04.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
+            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
           </div>
-          <n-link to = '/'>
+          <n-link to = '#'>
             <ListItem
               kicker = '05'
               title = 'Kota the Friend–FOTO'
@@ -43,6 +43,13 @@
         </li>
 
         <li class="anim--enter">
+          <!-- <div class="imgs">
+            <img class="img" src="~/static/img/matt/bon-iver/01.jpg" alt="">
+            <img class="img" src="~/static/img/matt/bon-iver/02.jpg" alt="">
+            <img class="img" src="~/static/img/matt/bon-iver/04.jpg" alt="">
+            <img class="img" src="~/static/img/matt/bon-iver/03.jpg" alt="">
+            <img class="img" src="~/static/img/matt/bon-iver/03.jpg" alt="">
+          </div> -->
           <n-link to = '/'>
             <ListItem
               kicker = '04'
@@ -108,8 +115,6 @@
 
     img {
       position: absolute;
-      // opacity: 0;
-      // transform: translateY(2.4rem) scaleY(1.5);
       transform-origin: top;
     }
 
@@ -209,12 +214,10 @@
           `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
         )
       })
-
+      // list item hover (5)
       const trigger = document.querySelectorAll('.list-item')[0]
       gsap.set('img', {
         opacity: 0,
-        // y: '2.4rem',
-        // scaleY: 1.5,
       })
 
       trigger.addEventListener('mouseenter', () => {
