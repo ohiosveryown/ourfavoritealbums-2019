@@ -250,6 +250,10 @@
             duration: .1,
           })
         })
+      } else {
+        gsap.set('img', {
+          opacity: 0,
+        })
       }
 
     },
