@@ -27,14 +27,14 @@
       <ul>
         <li class="anim--enter">
           <div class="imgs">
-            <img class="img" src="~/static/img/matt/kota/01.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/01.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/02.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/02.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/03.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/04.jpg" alt="">
-            <img class="img" src="~/static/img/matt/kota/04.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/01.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/01.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/02.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/02.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/03.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/03.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/04.jpg" alt="">
+            <img class="five" src="~/static/img/matt/kota/04.jpg" alt="">
           </div>
           <n-link to = '#'>
             <ListItem
@@ -46,13 +46,16 @@
         </li>
 
         <li class="anim--enter">
-          <!-- <div class="imgs">
-            <img class="img" src="~/static/img/matt/bon-iver/01.jpg" alt="">
-            <img class="img" src="~/static/img/matt/bon-iver/02.jpg" alt="">
-            <img class="img" src="~/static/img/matt/bon-iver/04.jpg" alt="">
-            <img class="img" src="~/static/img/matt/bon-iver/03.jpg" alt="">
-            <img class="img" src="~/static/img/matt/bon-iver/03.jpg" alt="">
-          </div> -->
+          <div class="imgs">
+            <img class="four" src="~/static/img/matt/bon-iver/01.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/01.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/02.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/02.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/03.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/03.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/04.jpg" alt="">
+            <img class="four" src="~/static/img/matt/bon-iver/04.jpg" alt="">
+          </div>
           <n-link to = '/'>
             <ListItem
               kicker = '04'
@@ -179,7 +182,7 @@
 
 <!-- logic -->
 <script>
-  import { animateEnter, fadeIn } from '~/logic/animate.js'
+  import { animateEnter, fadeIn, entry } from '~/logic/animate.js'
   import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
   import ListItem from '~/components/ListItem'
@@ -196,6 +199,8 @@
     mounted() {
       animateEnter()
       fadeIn()
+      entry()
+
       // logotype / avatar hover follow
       const avatar = document.querySelector('.avatar')
       document.addEventListener('mousemove', (e) => {
@@ -205,60 +210,7 @@
         )
       })
       // list item hover (5)
-      const mq = matchMedia( '(pointer:fine)' )
-
-      if (mq.matches) {
-        const trigger = document.querySelectorAll('.list-item')[0]
-        gsap.set('.img', {
-          opacity: 0,
-          y: '0',
-          x: '0',
-        })
-
-        trigger.addEventListener('mouseenter', () => {
-          const tl = gsap.timeline()
-          tl.to('.img', {
-            // y: 0,
-            x: 'random(-1000vw, 1000vw)',
-            y: 'random(-100vh, 100vh)',
-            scale: 1,
-            duration: .1,
-          })
-
-          tl.to('.img', {
-            opacity: 1,
-            stagger: .075,
-            duration: .56,
-            ease: Power2.easeInOut,
-          })
-        })
-
-        trigger.addEventListener('mouseleave', () => {
-          const tl = gsap.timeline()
-          tl.to('.img', {
-            opacity: 0,
-            scaleY: 1.5,
-            scaleX: .75,
-            y: '204%',
-            stagger: .056,
-            duration: .4,
-            ease: Power2.easeInOut
-          })
-
-        tl.to('.img', {
-            scaleY: 1,
-            scaleX: 1,
-            x: 'random(-1000vw, 1000vw)',
-            y: 'random(-100vh, 100vh)',
-            duration: .01,
-          })
-        })
-      } else {
-        gsap.set('img', {
-          opacity: 0,
-        })
-      }
-
+      entry()
     },
 
   }
