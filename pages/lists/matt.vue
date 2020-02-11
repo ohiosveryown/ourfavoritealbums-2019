@@ -19,7 +19,7 @@
         title = 'Matt'
       />
 
-      <img class="logotype-img" src="~/static/img/avatars/matt.jpg" alt="matt">
+      <img ref='avatar' class="logotype-img" src="~/static/img/avatars/matt.jpg" alt="matt">
 
       <ul>
         <li class="anim--enter">
@@ -148,15 +148,12 @@
     mounted() {
       animateEnter()
       fadeIn()
-
-      const imgs = document.querySelectorAll('.logotype-img')
+      // logotype / avatar hover follow
       document.addEventListener('mousemove', (e) => {
-        imgs.forEach((img) => {
-          img.setAttribute(
-            'style',
-            `transform: translate(${e.pageX - 608}px, ${e.pageY - 172}px);`
-          )
-        })
+        this.$refs.avatar.setAttribute(
+          'style',
+          `transform: translate(${e.pageX - 608}px, ${e.pageY - 172}px);`
+        )
       })
     },
 
