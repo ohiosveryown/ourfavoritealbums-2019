@@ -238,7 +238,8 @@
           tl.to('.img', {
             opacity: 0,
             scaleY: 1.5,
-            y: '2.4rem',
+            scaleX: .75,
+            y: '6rem',
             stagger: .056,
             duration: .4,
             ease: Power2.easeInOut
@@ -246,6 +247,7 @@
 
         tl.to('.img', {
             scaleY: 1,
+            scaleX: 1,
             y: '0',
             duration: .1,
           })
