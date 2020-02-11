@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <div class="list--wrapper width">
+  <div class="list--wrapper">
 
     <Navigation class="anim--fade-in gravity">
       <template v-slot:left>
@@ -12,15 +12,19 @@
       <template v-slot:right>Matt</template>
     </Navigation>
 
-    <main>
+
+    <header class="pt-9">
       <Logotype
         class = "anim--enter outline--infrared"
         style = "fill: var(--gravity); transform: scale(.72)"
         title = 'Matt'
       />
 
-      <img ref='avatar' class="logotype-img" src="~/static/img/avatars/matt.jpg" alt="matt">
+      <img ref='avatar' class="avatar" src="~/static/img/avatars/matt.jpg" alt="matt">
+    </header>
 
+
+    <main class="width">
       <ul>
         <li class="anim--enter">
           <n-link to = '/'>
@@ -89,14 +93,19 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
+  .list--wrapper {
+    position: relative;
+  }
+
   .logotype {
     margin: 0 auto;
     mix-blend-mode: difference;
   }
 
-  .logotype-img {
+  .avatar {
     position: absolute;
     z-index: var(--zmin);
+    top: 0; left: 0;
     width: 200px; height: 200px;
     object-fit: cover;
     transition: transform 800ms cubic-bezier(.08, .8, .164, 1), opacity 300ms ease;
@@ -104,14 +113,15 @@
     will-change: transform;
   }
 
-  @media(pointer: fine) { .logotype:hover ~ .logotype-img { opacity: 1; }}
+  @media(pointer: fine) { .logotype:hover ~ .avatar { opacity: 1; }}
 
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 8rem 0 11.2rem;
+    padding: 0rem 0 11.2rem;
+    @include breakpoint(md) { margin-top: 1.6rem; }
   }
 
   .fuzzys {
@@ -152,7 +162,7 @@
       document.addEventListener('mousemove', (e) => {
         this.$refs.avatar.setAttribute(
           'style',
-          `transform: translate(${e.pageX - 608}px, ${e.pageY - 172}px);`
+          `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
         )
       })
     },

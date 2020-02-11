@@ -19,10 +19,13 @@
   nav {
     position: absolute;
     margin: 3.2rem auto;
+    right: 0; left: 0;
+    max-width: var(--max-width);
+    width: 90vw;
     z-index: var(--z4);
   }
 
-  nav, ul {
+  ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
