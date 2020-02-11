@@ -19,6 +19,8 @@
         title = 'Matt'
       />
 
+      <img class="logotype-img" src="~/static/img/avatars/matt.jpg" alt="matt">
+
       <ul>
         <li class="anim--enter">
           <n-link to = '/'>
@@ -87,7 +89,22 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-  .logotype { margin: 0 auto; }
+  .logotype {
+    margin: 0 auto;
+    mix-blend-mode: difference;
+  }
+
+  .logotype-img {
+    position: absolute;
+    z-index: var(--zmin);
+    width: 200px; height: 200px;
+    object-fit: cover;
+    transition: transform 800ms cubic-bezier(.08, .8, .164, 1), opacity 300ms ease;
+    opacity: 0;
+    will-change: transform;
+  }
+
+  @media(pointer: fine) { .logotype:hover ~ .logotype-img { opacity: 1; }}
 
   main {
     display: flex;
@@ -131,6 +148,16 @@
     mounted() {
       animateEnter()
       fadeIn()
+
+      const imgs = document.querySelectorAll('.logotype-img')
+      document.addEventListener('mousemove', (e) => {
+        imgs.forEach((img) => {
+          img.setAttribute(
+            'style',
+            `transform: translate(${e.pageX - 608}px, ${e.pageY - 172}px);`
+          )
+        })
+      })
     },
 
   }
