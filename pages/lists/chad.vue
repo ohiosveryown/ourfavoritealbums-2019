@@ -47,14 +47,14 @@
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="four" src="~/static/img/matt/bon-iver/01.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/01.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/02.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/02.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/03.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/03.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/04.jpg" alt="">
-            <img class="four" src="~/static/img/matt/bon-iver/04.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/01.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/01.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/02.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/02.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/03.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/03.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/04.jpg" alt="">
+            <img class="four" src="~/static/img/chad/vampire/04.jpg" alt="">
           </div>
           <n-link to = '/'>
             <ListItem
@@ -67,34 +67,34 @@
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="three" src="~/static/img/matt/taylor-swift/01.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/01.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/02.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/02.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/03.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/03.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/04.jpg" alt="">
-            <img class="three" src="~/static/img/matt/taylor-swift/04.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/01.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/01.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/02.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/02.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/03.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/03.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/04.jpg" alt="">
+            <img class="three" src="~/static/img/chad/clammbon/04.jpg" alt="">
           </div>
           <n-link to = '/'>
             <ListItem
               kicker = '03'
-              title = 'Clammbon—Moment E.P.'
-              subtitle = 'Moment E.P. by Clammbon—Indie'
+              title = 'Clammbon—Moment l.p.'
+              subtitle = 'Moment l.p. by Clammbon—Indie'
             />
           </n-link>
         </li>
 
         <li class="anim--enter">
          <div class="imgs">
-            <img class="two" src="~/static/img/matt/choosey/01.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/01.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/02.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/02.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/03.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/03.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/04.jpg" alt="">
-            <img class="two" src="~/static/img/matt/choosey/04.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/01.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/01.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/02.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/02.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/03.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/03.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/04.jpg" alt="">
+            <img class="two" src="~/static/img/chad/mgrig/04.jpg" alt="">
           </div>
           <n-link to = '/'>
             <ListItem
@@ -107,14 +107,14 @@
 
         <li class="anim--enter">
          <div class="imgs">
-            <img class="one" src="~/static/img/matt/tyler/01.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/01.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/02.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/02.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/03.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/03.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/04.jpg" alt="">
-            <img class="one" src="~/static/img/matt/tyler/04.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/01.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/01.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/02.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/02.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/03.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/03.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/04.jpg" alt="">
+            <img class="one" src="~/static/img/chad/takagi/04.jpg" alt="">
           </div>
           <n-link to = '/'>
             <ListItem
