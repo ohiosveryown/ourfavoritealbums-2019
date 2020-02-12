@@ -18,7 +18,7 @@ const fadeIn = () => {
   })
 }
 
-
+// list item
 const listItemLogic = () => {
   const mq = matchMedia( '(pointer:fine)' )
 

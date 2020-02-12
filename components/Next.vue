@@ -29,9 +29,12 @@
     @include breakpoint(md) { font-size: 2.2rem; }
   }
 
-  h3:before {
-    content: '';
-
+  @media(pointer: fine) {
+    h1:hover {
+      color: transparent;
+      text-stroke: 1px var(--stone);
+      -webkit-text-stroke: 1px var(--stone);
+    }
   }
 
 </style>

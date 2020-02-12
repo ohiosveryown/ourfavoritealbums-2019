@@ -9,7 +9,7 @@
       <template v-slot:center>
         <n-link to = '/2019'>Albums <span class="italic">of the</span> Year</n-link>
       </template>
-      <template v-slot:right>Matt</template>
+      <template v-slot:right>Chad</template>
     </Navigation>
 
 
@@ -17,10 +17,10 @@
       <Logotype
         class = "anim--enter outline--infrared"
         style = "fill: var(--gravity); transform: scale(.72)"
-        title = 'Matt'
+        title = 'Chad'
       />
 
-      <img ref='avatar' class="avatar" src="~/static/img/avatars/matt.jpg" alt="matt">
+      <img ref='avatar' class="avatar" src="~/static/img/avatars/chad.jpg" alt="chad">
     </header>
 
     <main class="width">
@@ -128,10 +128,10 @@
 
       <section class="fuzzys"/>
 
-      <n-link to = './chad'>
+      <n-link to = 'lists/chad'>
         <Next
           kicker = 'Playing Next'
-          title = "Chad's Top 5"
+          title = "Calebs's Top 5"
         />
       </n-link>
     </main>
@@ -174,6 +174,15 @@
       animateEnter()
       fadeIn()
       listItemLogic()
+
+      // logotype / avatar hover follow
+      const avatar = document.querySelector('.avatar')
+      document.addEventListener('mousemove', (e) => {
+        avatar.setAttribute(
+          'style',
+          `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
+        )
+      })
     },
 
   }
