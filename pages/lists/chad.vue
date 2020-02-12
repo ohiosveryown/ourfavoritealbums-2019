@@ -27,14 +27,14 @@
       <ul>
         <li class="anim--enter">
           <div class="imgs">
-            <img class="five" src="~/static/img/matt/kota/01.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/01.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/02.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/02.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/03.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/03.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/04.jpg" alt="">
-            <img class="five" src="~/static/img/matt/kota/04.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/01.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/01.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/02.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/02.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/03.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/03.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/04.jpg" alt="">
+            <img class="five" src="~/static/img/chad/ross/04.jpg" alt="">
           </div>
           <n-link to = '#'>
             <ListItem
