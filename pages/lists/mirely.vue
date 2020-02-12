@@ -9,7 +9,7 @@
       <template v-slot:center>
         <n-link to = '/2019'>Albums <span class="italic">of the</span> Year</n-link>
       </template>
-      <template v-slot:right>Chad</template>
+      <template v-slot:right>Mirely</template>
     </Navigation>
 
 
@@ -17,10 +17,10 @@
       <Logotype
         class = "anim--enter outline--infrared"
         style = "fill: var(--gravity); transform: scale(.72)"
-        title = 'Chad'
+        title = 'Mirely'
       />
 
-      <img ref='avatar' class="avatar" src="~/static/img/avatars/chad.jpg" alt="chad">
+      <img ref='avatar' class="avatar" src="~/static/img/avatars/Mirely.jpg" alt="Mirely">
     </header>
 
     <main class="width">
@@ -39,8 +39,8 @@
           <n-link to = '#'>
             <ListItem
               kicker = '05'
-              title = 'Low Roar–ross.'
-              subtitle = 'ross. by Low Roar—Indie'
+              title = 'Mac DeMarco—Here Comes the Cowboy'
+              subtitle = 'Here Comes the Cowboy by Mac DeMarco—Alternative'
             />
           </n-link>
         </li>
@@ -59,8 +59,8 @@
           <n-link to = '/'>
             <ListItem
               kicker = '04'
-              title = 'Vampire Weekend—Father of the Bride'
-              subtitle = 'Father of the Bride by Vampire Weekend—Alternative'
+              title = 'Bon Iver—I,I'
+              subtitle = 'I,I by Bon Ivor—Experimental'
             />
           </n-link>
         </li>
@@ -79,8 +79,8 @@
           <n-link to = '/'>
             <ListItem
               kicker = '03'
-              title = 'Clammbon—Moment E.P.'
-              subtitle = 'Moment E.P. by Clammbon—Indie'
+              title = 'Taylor Swift—Lover'
+              subtitle = 'Lover by Taylor Swift—Pop'
             />
           </n-link>
         </li>
@@ -99,8 +99,8 @@
           <n-link to = '/'>
             <ListItem
               kicker = '02'
-              title = 'M. Grig—Mount Carmel'
-              subtitle = 'Mount Carmel by M. Grig—Ambient'
+              title = 'Choosey & Exile—Black Beans'
+              subtitle = 'Black Beans by Choosey & Exile—Hip Hop'
             />
           </n-link>
         </li>
@@ -119,8 +119,8 @@
           <n-link to = '/'>
             <ListItem
               kicker = '01'
-              title = 'Masakatsu Takagi—Marginalia II'
-              subtitle = 'Marginalia II by Masakatsu Takagi—Indie'
+              title = 'Tyler, the Creator—IGOR'
+              subtitle = 'IGOR by Tyler, the Creator—Hip Hop'
             />
           </n-link>
         </li>
@@ -128,10 +128,10 @@
 
       <section class="fuzzys"/>
 
-      <n-link to = 'lists/chad'>
+      <n-link to = 'lists/roy'>
         <Next
           kicker = 'Playing Next'
-          title = "Caleb's Top 5"
+          title = "Roy's Top 5"
         />
       </n-link>
     </main>
