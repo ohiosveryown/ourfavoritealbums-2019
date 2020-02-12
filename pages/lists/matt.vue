@@ -40,7 +40,7 @@
             <ListItem
               kicker = '05'
               title = 'Kota the Friend–FOTO'
-              subtitle = 'FOTO by Kota the Friend'
+              subtitle = 'FOTO by Kota the Friend—Hip Hop'
             />
           </n-link>
         </li>
@@ -60,37 +60,67 @@
             <ListItem
               kicker = '04'
               title = 'Bon Iver—I,I'
-              subtitle = 'I,I by Bon Ivor'
+              subtitle = 'I,I by Bon Ivor—Experimental'
             />
           </n-link>
         </li>
 
         <li class="anim--enter">
+          <div class="imgs">
+            <img class="three" src="~/static/img/matt/taylor-swift/01.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/01.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/02.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/02.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/03.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/03.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/04.jpg" alt="">
+            <img class="three" src="~/static/img/matt/taylor-swift/04.jpg" alt="">
+          </div>
           <n-link to = '/'>
             <ListItem
               kicker = '03'
               title = 'Taylor Swift—Lover'
-              subtitle = 'Lover by Taylor Swift'
+              subtitle = 'Lover by Taylor Swift—Pop'
             />
           </n-link>
         </li>
 
         <li class="anim--enter">
+         <div class="imgs">
+            <img class="two" src="~/static/img/matt/choosey/01.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/01.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/02.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/02.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/03.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/03.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/04.jpg" alt="">
+            <img class="two" src="~/static/img/matt/choosey/04.jpg" alt="">
+          </div>
           <n-link to = '/'>
             <ListItem
               kicker = '02'
               title = 'Choosey & Exile—Black Beans'
-              subtitle = 'Black Beans by Choosey & Exile'
+              subtitle = 'Black Beans by Choosey & Exile—Hip Hop'
             />
           </n-link>
         </li>
 
         <li class="anim--enter">
+         <div class="imgs">
+            <img class="one" src="~/static/img/matt/tyler/01.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/01.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/02.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/02.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/03.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/03.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/04.jpg" alt="">
+            <img class="one" src="~/static/img/matt/tyler/04.jpg" alt="">
+          </div>
           <n-link to = '/'>
             <ListItem
               kicker = '01'
               title = 'Tyler, the Creator—IGOR'
-              subtitle = 'IGOR by Tyler, the Creator'
+              subtitle = 'IGOR by Tyler, the Creator—Hip Hop'
             />
           </n-link>
         </li>
@@ -132,8 +162,6 @@
     img:nth-of-type(6) { width: 21.2rem; height: auto; }
     img:nth-of-type(7) { width: 24rem; height: auto; }
     img:nth-of-type(8) { width: 15.6rem; height: auto; }
-
-
   }
 
   .list--wrapper { overflow-x: hidden; }
@@ -182,7 +210,7 @@
 
 <!-- logic -->
 <script>
-  import { animateEnter, fadeIn, entry } from '~/logic/animate.js'
+  import { animateEnter, fadeIn, listItemLogic } from '~/logic/animate.js'
   import Navigation from '~/components/Navigation'
   import Logotype from '~/components/Logotype'
   import ListItem from '~/components/ListItem'
@@ -199,7 +227,7 @@
     mounted() {
       animateEnter()
       fadeIn()
-      entry()
+      listItemLogic()
 
       // logotype / avatar hover follow
       const avatar = document.querySelector('.avatar')
@@ -209,8 +237,6 @@
           `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
         )
       })
-      // list item hover (5)
-      entry()
     },
 
   }
