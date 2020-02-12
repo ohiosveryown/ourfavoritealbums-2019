@@ -18,7 +18,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/andrew'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Andrew's Top 5 Albums</h2>
           <figure class="andrew"></figure>
@@ -48,7 +48,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/chad'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Chad's Top 5 Albums</h2>
           <figure class="chad"></figure>
