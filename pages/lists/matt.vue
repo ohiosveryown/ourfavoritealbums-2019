@@ -128,10 +128,10 @@
 
       <section class="fuzzys"/>
 
-      <n-link to = './chad'>
+      <n-link to = './andrew'>
         <Next
           kicker = 'Playing Next'
-          title = "Chad's Top 5"
+          title = "Andrew's Top 5"
         />
       </n-link>
     </main>
@@ -163,6 +163,8 @@
 
 
   export default {
+    head() { return { title: "AOTY – Matt's List" }},
+
     components: { Navigation, Logotype, ListItem, Next },
     layout: 'list',
 
@@ -174,6 +176,15 @@
       animateEnter()
       fadeIn()
       listItemLogic()
+
+      // logotype / avatar hover follow
+      const avatar = document.querySelector('.avatar')
+      document.addEventListener('mousemove', (e) => {
+        avatar.setAttribute(
+          'style',
+          `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
+        )
+      })
     },
 
   }

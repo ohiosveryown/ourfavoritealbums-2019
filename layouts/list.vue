@@ -83,14 +83,14 @@
 <script>
   export default {
     mounted() {
-      // logotype / avatar hover follow
-      const avatar = document.querySelector('.avatar')
-      document.addEventListener('mousemove', (e) => {
-        avatar.setAttribute(
-          'style',
-          `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
-        )
-      })
+      // // logotype / avatar hover follow
+      // const avatar = document.querySelector('.avatar')
+      // document.addEventListener('mousemove', (e) => {
+      //   avatar.setAttribute(
+      //     'style',
+      //     `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
+      //   )
+      // })
     }
   }
 </script>

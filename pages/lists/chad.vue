@@ -163,6 +163,8 @@
 
 
   export default {
+    head() { return { title: "AOTY – Chad's List" }},
+
     components: { Navigation, Logotype, ListItem, Next },
     layout: 'list',
 
@@ -174,6 +176,15 @@
       animateEnter()
       fadeIn()
       listItemLogic()
+
+      // logotype / avatar hover follow
+      const avatar = document.querySelector('.avatar')
+      document.addEventListener('mousemove', (e) => {
+        avatar.setAttribute(
+          'style',
+          `transform: translate(${e.pageX - 100}px, ${e.pageY - 100}px);`
+        )
+      })
     },
 
   }

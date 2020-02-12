@@ -139,6 +139,7 @@
   import Avatar from '~/components/Avatar'
 
   export default {
+    head() { return { title: "AOTY – 2019" }},
 
     components: { Navigation, Logotype, Avatar },
 

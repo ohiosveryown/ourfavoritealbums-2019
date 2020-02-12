@@ -87,6 +87,7 @@
   import Logotype from '~/components/Logotype'
 
   export default {
+    head() { return { title: "AOTY – Our Favorite Albums" }},
 
     beforeMount() {
       document.body.style.background = 'var(--gravity)'
