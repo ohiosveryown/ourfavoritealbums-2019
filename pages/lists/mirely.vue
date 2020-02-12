@@ -128,7 +128,7 @@
 
       <section class="fuzzys"/>
 
-      <n-link to = 'lists/roy'>
+      <n-link to = 'lists/chad'>
         <Next
           kicker = 'Playing Next'
           title = "Roy's Top 5"
