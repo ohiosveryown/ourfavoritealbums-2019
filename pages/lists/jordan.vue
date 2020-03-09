@@ -9,7 +9,7 @@
       <template v-slot:center>
         <n-link to = '/2019'>Albums <span class="italic">of the</span> Year</n-link>
       </template>
-      <template v-slot:right>Chad</template>
+      <template v-slot:right>Jordan</template>
     </Navigation>
 
 
@@ -17,30 +17,30 @@
       <Logotype
         class = "anim--enter outline--infrared"
         style = "fill: var(--gravity); transform: scale(.72)"
-        title = 'Chad'
+        title = 'Jordan'
       />
 
-      <img ref='avatar' class="avatar" src="~/static/img/avatars/chad.jpg" alt="chad">
+      <img ref='avatar' class="avatar" src="~/static/img/avatars/jordan.jpg" alt="jordan">
     </header>
 
     <main class="width">
       <ul>
         <li class="anim--enter">
           <div class="imgs">
-            <img class="five" src="~/static/img/chad/ross/01.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/01.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/02.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/02.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/03.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/03.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/04.jpg" alt="">
-            <img class="five" src="~/static/img/chad/ross/04.jpg" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/01.jpg" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/01.jpg" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/02.png" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/02.png" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/03.png" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/03.png" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/04.jpg" alt="">
+            <img class="five" src="~/static/img/jordan/bridges/04.jpg" alt="">
           </div>
           <n-link to = '#'>
             <ListItem
               kicker = '05'
-              title = 'Low Roar–ross.'
-              subtitle = 'ross. by Low Roar—Indie'
+              title = 'Kiefer–Bridges'
+              subtitle = 'Bridges by Kiefer—Jazz'
             />
           </n-link>
         </li>
@@ -163,7 +163,7 @@
 
 
   export default {
-    head() { return { title: "AOTY – Chad's List" }},
+    head() { return { title: "AOTY – Jordan's List" }},
 
     components: { Navigation, Logotype, ListItem, Next },
     layout: 'list',
