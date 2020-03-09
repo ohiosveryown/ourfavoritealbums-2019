@@ -9,7 +9,7 @@
       <template v-slot:center>
         <n-link to = '/2019'>Albums <span class="italic">of the</span> Year</n-link>
       </template>
-      <template v-slot:right>Andrew</template>
+      <template v-slot:right>Caleb</template>
     </Navigation>
 
 
@@ -17,10 +17,10 @@
       <Logotype
         class = "anim--enter outline--infrared"
         style = "fill: var(--gravity); transform: scale(.72)"
-        title = 'Andrew'
+        title = 'Caleb'
       />
 
-      <img ref='avatar' class="avatar" src="~/static/img/avatars/andrew.jpg" alt="andrew">
+      <img ref='avatar' class="avatar" src="~/static/img/avatars/caleb.jpg" alt="caleb">
     </header>
 
     <main class="width">

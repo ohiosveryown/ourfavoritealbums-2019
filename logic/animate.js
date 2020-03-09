@@ -57,7 +57,7 @@ const listItemLogic = () => {
         scaleX: .75,
         y: '204%',
         stagger: .056,
-        duration: .4,
+        duration: .3,
         ease: Power2.easeInOut
       })
 
@@ -104,7 +104,7 @@ const listItemLogic = () => {
         scaleX: .75,
         y: '204%',
         stagger: .056,
-        duration: .4,
+        duration: .3,
         ease: Power2.easeInOut
       })
 
@@ -151,7 +151,7 @@ const listItemLogic = () => {
         scaleX: .75,
         y: '204%',
         stagger: .056,
-        duration: .4,
+        duration: .3,
         ease: Power2.easeInOut
       })
 
@@ -198,7 +198,7 @@ const listItemLogic = () => {
         scaleX: .75,
         y: '204%',
         stagger: .056,
-        duration: .4,
+        duration: .3,
         ease: Power2.easeInOut
       })
 
@@ -245,7 +245,7 @@ const listItemLogic = () => {
         scaleX: .75,
         y: '204%',
         stagger: .056,
-        duration: .4,
+        duration: .3,
         ease: Power2.easeInOut
       })
 

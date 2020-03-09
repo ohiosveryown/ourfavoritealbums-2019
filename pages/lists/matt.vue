@@ -36,13 +36,11 @@
             <img class="five" src="~/static/img/matt/kota/04.jpg" alt="">
             <img class="five" src="~/static/img/matt/kota/04.jpg" alt="">
           </div>
-          <n-link to = '#'>
-            <ListItem
-              kicker = '05'
-              title = 'Kota the Friend–FOTO'
-              subtitle = 'FOTO by Kota the Friend—Hip Hop'
-            />
-          </n-link>
+          <ListItem
+            kicker = '05'
+            title = 'Kota the Friend–FOTO'
+            subtitle = 'FOTO by Kota the Friend—Hip Hop'
+          />
         </li>
 
         <li class="anim--enter">
@@ -56,13 +54,11 @@
             <img class="four" src="~/static/img/matt/bon-iver/04.jpg" alt="">
             <img class="four" src="~/static/img/matt/bon-iver/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '04'
-              title = 'Bon Iver—I,I'
-              subtitle = 'I,I by Bon Ivor—Experimental'
-            />
-          </n-link>
+          <ListItem
+            kicker = '04'
+            title = 'Bon Iver—I,I'
+            subtitle = 'I,I by Bon Ivor—Experimental'
+          />
         </li>
 
         <li class="anim--enter">
@@ -76,13 +72,11 @@
             <img class="three" src="~/static/img/matt/taylor-swift/04.jpg" alt="">
             <img class="three" src="~/static/img/matt/taylor-swift/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '03'
-              title = 'Taylor Swift—Lover'
-              subtitle = 'Lover by Taylor Swift—Pop'
-            />
-          </n-link>
+          <ListItem
+            kicker = '03'
+            title = 'Taylor Swift—Lover'
+            subtitle = 'Lover by Taylor Swift—Pop'
+          />
         </li>
 
         <li class="anim--enter">
@@ -96,13 +90,11 @@
             <img class="two" src="~/static/img/matt/choosey/04.jpg" alt="">
             <img class="two" src="~/static/img/matt/choosey/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '02'
-              title = 'Choosey & Exile—Black Beans'
-              subtitle = 'Black Beans by Choosey & Exile—Hip Hop'
-            />
-          </n-link>
+          <ListItem
+            kicker = '02'
+            title = 'Choosey & Exile—Black Beans'
+            subtitle = 'Black Beans by Choosey & Exile—Hip Hop'
+          />
         </li>
 
         <li class="anim--enter">
@@ -116,13 +108,11 @@
             <img class="one" src="~/static/img/matt/tyler/04.jpg" alt="">
             <img class="one" src="~/static/img/matt/tyler/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '01'
-              title = 'Tyler, the Creator—IGOR'
-              subtitle = 'IGOR by Tyler, the Creator—Hip Hop'
-            />
-          </n-link>
+          <ListItem
+            kicker = '01'
+            title = 'Tyler, the Creator—IGOR'
+            subtitle = 'IGOR by Tyler, the Creator—Hip Hop'
+          />
         </li>
       </ul>
 
