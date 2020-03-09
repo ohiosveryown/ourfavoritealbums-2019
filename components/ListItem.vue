@@ -16,7 +16,7 @@
 
   div {
     margin: 4rem auto 5.6rem;
-    @include breakpoint(md) { margin: 8rem auto 24rem; }
+    @include breakpoint(md) { margin: 8rem auto 32rem; }
   }
 
   h3 {
