@@ -27,101 +27,101 @@
       <ul>
         <li class="anim--enter">
           <div class="imgs">
-            <img class="five" src="~/static/img/andrew/post/01.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/01.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/02.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/02.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/03.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/03.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/04.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/post/04.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/01.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/01.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/02.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/02.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/03.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/03.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/04.jpg" alt="">
+            <img class="five" src="~/static/img/caleb/blawan/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '05'
-            title = "Post Malone–Hollywood's Bleeding"
-            subtitle = "Hollywood's Bleeding by Post Malone—Pop"
+            title = "blawan–Many Many Pings"
+            subtitle = "Many Many Pings by blawan—Electronic"
           />
         </li>
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="four" src="~/static/img/andrew/nasx/01.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/01.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/02.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/02.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/03.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/03.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/04.jpg" alt="">
-            <img class="four" src="~/static/img/andrew/nasx/04.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/01.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/01.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/02.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/02.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/03.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/03.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/04.jpg" alt="">
+            <img class="four" src="~/static/img/caleb/crush/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '04'
-            title = 'Lil Nas X—7 EP'
-            subtitle = '7 EP by Lil Nas X—Hip Hop'
+            title = 'Floating Points—Crush'
+            subtitle = 'Crush by Floating Points—Electronic'
           />
         </li>
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="three" src="~/static/img/andrew/ye/01.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/01.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/02.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/02.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/03.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/03.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/04.jpg" alt="">
-            <img class="three" src="~/static/img/andrew/ye/05.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/01.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/01.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/02.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/02.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/03.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/03.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/04.jpg" alt="">
+            <img class="three" src="~/static/img/caleb/daphni/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '03'
-            title = 'Kanye West—Jesus is King'
-            subtitle = 'Jesus is King by Kanye West—Gospel'
+            title = 'Daphni—Sizzling EP'
+            subtitle = 'Sizzling EP by Daphni—Electronic'
           />
         </li>
 
         <li class="anim--enter">
          <div class="imgs">
-            <img class="two" src="~/static/img/andrew/dreamville/01.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/01.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/02.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/02.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/03.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/03.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/04.jpg" alt="">
-            <img class="two" src="~/static/img/andrew/dreamville/04.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/01.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/01.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/02.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/02.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/03.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/03.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/04.jpg" alt="">
+            <img class="two" src="~/static/img/caleb/sophie/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '02'
-            title = 'Dreamville—Revenge of the Dreamers III'
-            subtitle = 'Revenge of the Dreamers by Dreamville III—Hip Hop'
+            title = "SOPHIE—Oil of Every Pearl's Un-Insides"
+            subtitle = "Oil of Every Pearl's Un-Insides by SOPHIE—Avant Pop"
           />
         </li>
 
         <li class="anim--enter">
          <div class="imgs">
-            <img class="one" src="~/static/img/andrew/billie/01.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/01.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/02.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/02.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/03.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/03.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/04.jpg" alt="">
-            <img class="one" src="~/static/img/andrew/billie/04.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/01.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/01.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/02.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/02.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/03.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/03.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/04.jpg" alt="">
+            <img class="one" src="~/static/img/caleb/sandy/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '01'
-            title = 'Billie Eilish—When We Fall Asleep...'
-            subtitle = 'When We Fall Asleep... by Billie Eilish—Pop'
+            title = '(Sandy) Alex G—House of Sugar'
+            subtitle = 'House of Sugar by (Sandy) Alex G—Pop'
           />
         </li>
       </ul>
 
       <section class="fuzzys"/>
 
-      <n-link to = './caleb'>
+      <n-link to = './chad'>
         <Next
           kicker = 'Playing Next'
-          title = "Caleb's Top 5"
+          title = "Chad's Top 5"
         />
       </n-link>
     </main>
@@ -153,7 +153,7 @@
 
 
   export default {
-    head() { return { title: "AOTY – Andrew's List" }},
+    head() { return { title: "AOTY – Caleb's List" }},
 
     components: { Navigation, Logotype, ListItem, Next },
     layout: 'list',
