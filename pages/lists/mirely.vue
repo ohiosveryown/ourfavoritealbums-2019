@@ -36,7 +36,7 @@
             <img class="five" src="~/static/img/mirely/mac/04.jpg" alt="">
           </div>
           <ListItem
-            kicker = '03'
+            kicker = '05'
             title = 'Mac DeMarco—Here Comes the Cowboy'
             subtitle = 'Here Comes the Cowboy by Mac DeMarco—Indie'
           />
@@ -44,83 +44,83 @@
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="four" src="~/static/img/kristie/rex/01.jpg" alt="">
-            <img class="four" src="~/static/img/kristie/rex/01.jpg" alt="">
-            <img class="four" src="~/static/img/kristie/rex/02.png" alt="">
-            <img class="four" src="~/static/img/kristie/rex/02.png" alt="">
-            <img class="four" src="~/static/img/kristie/rex/03.gif" alt="">
-            <img class="four" src="~/static/img/kristie/rex/03.gif" alt="">
-            <img class="four" src="~/static/img/kristie/rex/04.jpg" alt="">
-            <img class="four" src="~/static/img/kristie/rex/04.jpg" alt="">
+            <img class="four" src="~/static/img/mirely/jay/01.jpg" alt="">
+            <img class="four" src="~/static/img/mirely/jay/01.jpg" alt="">
+            <img class="four" src="~/static/img/mirely/jay/02.png" alt="">
+            <img class="four" src="~/static/img/mirely/jay/02.png" alt="">
+            <img class="four" src="~/static/img/mirely/jay/03.jpg" alt="">
+            <img class="four" src="~/static/img/mirely/jay/03.jpg" alt="">
+            <img class="four" src="~/static/img/mirely/jay/04.png" alt="">
+            <img class="four" src="~/static/img/mirely/jay/04.png" alt="">
           </div>
           <ListItem
             kicker = '04'
-            title = 'Rex Orange County—Pony'
-            subtitle = 'Pony by Rex Orange County—Alternative'
+            title = 'Jay Som—Anak Ko'
+            subtitle = 'Anak Ko by Jay Som—Alternative'
           />
         </li>
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="three" src="~/static/img/kristie/doja/01.jpg" alt="">
-            <img class="three" src="~/static/img/kristie/doja/01.jpg" alt="">
-            <img class="three" src="~/static/img/kristie/doja/02.jpg" alt="">
-            <img class="three" src="~/static/img/kristie/doja/02.jpg" alt="">
-            <img class="three" src="~/static/img/kristie/doja/03.jpg" alt="">
-            <img class="three" src="~/static/img/kristie/doja/03.jpg" alt="">
-            <img class="three" src="~/static/img/kristie/doja/04.gif" alt="">
-            <img class="three" src="~/static/img/kristie/doja/04.gif" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/01.jpg" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/01.jpg" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/02.png" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/02.png" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/03.jpg" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/03.jpg" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/04.jpg" alt="">
+            <img class="three" src="~/static/img/mirely/blood-orange/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '03'
-            title = 'Doja Cat—Hot Pink'
-            subtitle = 'Hot Pink by Doja Cat—R&B'
+            title = "Blood Orange—Angel's Pulse"
+            subtitle = "Angel's Pulse by Blood Orange—Alternative"
           />
         </li>
 
         <li class="anim--enter">
-         <div class="imgs">
-            <img class="two" src="~/static/img/kristie/maggie/01.jpg" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/01.jpg" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/02.png" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/02.png" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/03.jpg" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/03.jpg" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/04.jpg" alt="">
-            <img class="two" src="~/static/img/kristie/maggie/04.jpg" alt="">
+          <div class="imgs">
+            <img class="two" src="~/static/img/mirely/anemone/01.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/01.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/02.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/02.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/03.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/03.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/04.jpg" alt="">
+            <img class="two" src="~/static/img/mirely/anemone/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '02'
-            title = 'Maggie Rogers—Heard It In A Past Life'
-            subtitle = 'Heard It In A Past Life by Maggie Rogers—Pop'
+            title = 'Anemone—Beat My Distance'
+            subtitle = 'Beat My Distance by Anemone—Alternative'
           />
         </li>
 
         <li class="anim--enter">
-         <div class="imgs">
-            <img class="one" src="~/static/img/kristie/james/01.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/01.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/02.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/02.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/03.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/03.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/04.jpg" alt="">
-            <img class="one" src="~/static/img/kristie/james/04.jpg" alt="">
+          <div class="imgs">
+            <img class="one" src="~/static/img/jordan/toro/01.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/01.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/02.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/02.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/03.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/03.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/04.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/toro/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '01'
-            title = 'James Blake—Assume Form'
-            subtitle = 'Assume Form by James Blake—Alternative'
+            title = 'Toro Y Moi—Outer Peace'
+            subtitle = 'Outer Peace by Toro Y Moi—Indie'
           />
         </li>
       </ul>
 
       <section class="fuzzys"/>
 
-      <n-link to = './mirely'>
+      <n-link to = './roy'>
         <Next
           kicker = 'Playing Next'
-          title = "Mirely's Top 5"
+          title = "Roy's Top 5"
         />
       </n-link>
     </main>
