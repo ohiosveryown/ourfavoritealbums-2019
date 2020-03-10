@@ -33,7 +33,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/caleb'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Caleb's Top 5 Albums</h2>
           <figure class="caleb"></figure>
@@ -63,7 +63,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/jordan'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Jordan's Top 5 Albums</h2>
           <figure class="jordan"></figure>
@@ -78,7 +78,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/kristie'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Kristie's Top 5 Albums</h2>
           <figure class="kristie"></figure>
@@ -93,7 +93,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/mirely'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Mirely's Top 5 Albums</h2>
           <figure class="mirely"></figure>
@@ -108,7 +108,7 @@
     </li>
 
     <li class="anim--enter mb-3">
-      <n-link to = '/'>
+      <n-link to = '/lists/roy'>
         <div class="wrapper">
           <h2 class="keyword mb-0 link content-width respira">Roy's Top 5 Albums</h2>
           <figure class="roy"></figure>
