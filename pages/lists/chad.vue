@@ -36,13 +36,11 @@
             <img class="five" src="~/static/img/chad/ross/04.jpg" alt="">
             <img class="five" src="~/static/img/chad/ross/04.jpg" alt="">
           </div>
-          <n-link to = '#'>
-            <ListItem
-              kicker = '05'
-              title = 'Low Roar–ross.'
-              subtitle = 'ross. by Low Roar—Indie'
-            />
-          </n-link>
+          <ListItem
+            kicker = '05'
+            title = 'Low Roar–ross.'
+            subtitle = 'ross. by Low Roar—Indie'
+          />
         </li>
 
         <li class="anim--enter">
@@ -56,13 +54,11 @@
             <img class="four" src="~/static/img/chad/vampire/04.jpg" alt="">
             <img class="four" src="~/static/img/chad/vampire/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '04'
-              title = 'Vampire Weekend—Father of the Bride'
-              subtitle = 'Father of the Bride by Vampire Weekend—Alternative'
-            />
-          </n-link>
+          <ListItem
+            kicker = '04'
+            title = 'Vampire Weekend—Father of the Bride'
+            subtitle = 'Father of the Bride by Vampire Weekend—Alternative'
+          />
         </li>
 
         <li class="anim--enter">
@@ -76,13 +72,11 @@
             <img class="three" src="~/static/img/chad/clammbon/04.jpg" alt="">
             <img class="three" src="~/static/img/chad/clammbon/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '03'
-              title = 'Clammbon—Moment l.p.'
-              subtitle = 'Moment l.p. by Clammbon—Indie'
-            />
-          </n-link>
+          <ListItem
+            kicker = '03'
+            title = 'Clammbon—Moment l.p.'
+            subtitle = 'Moment l.p. by Clammbon—Indie'
+          />
         </li>
 
         <li class="anim--enter">
@@ -96,13 +90,11 @@
             <img class="two" src="~/static/img/chad/mgrig/04.jpg" alt="">
             <img class="two" src="~/static/img/chad/mgrig/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '02'
-              title = 'M. Grig—Mount Carmel'
-              subtitle = 'Mount Carmel by M. Grig—Ambient'
-            />
-          </n-link>
+          <ListItem
+            kicker = '02'
+            title = 'M. Grig—Mount Carmel'
+            subtitle = 'Mount Carmel by M. Grig—Ambient'
+          />
         </li>
 
         <li class="anim--enter">
@@ -116,13 +108,11 @@
             <img class="one" src="~/static/img/chad/takagi/04.jpg" alt="">
             <img class="one" src="~/static/img/chad/takagi/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '01'
-              title = 'Masakatsu Takagi—Marginalia II'
-              subtitle = 'Marginalia II by Masakatsu Takagi—Indie'
-            />
-          </n-link>
+          <ListItem
+            kicker = '01'
+            title = 'Masakatsu Takagi—Marginalia II'
+            subtitle = 'Marginalia II by Masakatsu Takagi—Indie'
+          />
         </li>
       </ul>
 

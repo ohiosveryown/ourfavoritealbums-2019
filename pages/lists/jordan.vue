@@ -36,102 +36,92 @@
             <img class="five" src="~/static/img/jordan/bridges/04.jpg" alt="">
             <img class="five" src="~/static/img/jordan/bridges/04.jpg" alt="">
           </div>
-          <n-link to = '#'>
-            <ListItem
-              kicker = '05'
-              title = 'Kiefer–Bridges'
-              subtitle = 'Bridges by Kiefer—Jazz'
-            />
-          </n-link>
+          <ListItem
+            kicker = '05'
+            title = 'Kiefer–Bridges'
+            subtitle = 'Bridges by Kiefer—Jazz'
+          />
         </li>
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="four" src="~/static/img/chad/vampire/01.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/01.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/02.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/02.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/03.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/03.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/04.jpg" alt="">
-            <img class="four" src="~/static/img/chad/vampire/04.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/01.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/01.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/02.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/02.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/03.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/03.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/04.jpg" alt="">
+            <img class="four" src="~/static/img/jordan/lux/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '04'
-              title = 'Vampire Weekend—Father of the Bride'
-              subtitle = 'Father of the Bride by Vampire Weekend—Alternative'
-            />
-          </n-link>
+          <ListItem
+            kicker = '04'
+            title = 'Karen O & Danger Mouse—Lux Prima'
+            subtitle = 'Lux Prima by Karen O & Danger Mouse—Alternative'
+          />
         </li>
 
         <li class="anim--enter">
           <div class="imgs">
-            <img class="three" src="~/static/img/chad/clammbon/01.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/01.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/02.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/02.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/03.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/03.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/04.jpg" alt="">
-            <img class="three" src="~/static/img/chad/clammbon/04.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/01.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/01.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/02.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/02.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/03.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/03.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/04.jpg" alt="">
+            <img class="three" src="~/static/img/jordan/toro/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '03'
-              title = 'Clammbon—Moment l.p.'
-              subtitle = 'Moment l.p. by Clammbon—Indie'
-            />
-          </n-link>
+          <ListItem
+            kicker = '03'
+            title = 'Toro Y Moi—Outer Peace'
+            subtitle = 'Outer Peace by Toro Y Moi—Indie'
+          />
         </li>
 
         <li class="anim--enter">
          <div class="imgs">
-            <img class="two" src="~/static/img/chad/mgrig/01.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/01.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/02.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/02.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/03.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/03.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/04.jpg" alt="">
-            <img class="two" src="~/static/img/chad/mgrig/04.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/01.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/01.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/02.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/02.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/03.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/03.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/04.jpg" alt="">
+            <img class="two" src="~/static/img/jordan/bandana/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '02'
-              title = 'M. Grig—Mount Carmel'
-              subtitle = 'Mount Carmel by M. Grig—Ambient'
-            />
-          </n-link>
+          <ListItem
+            kicker = '02'
+            title = 'Freddie Gibbs & Madlib—Bandana'
+            subtitle = 'Bandana by Freddie Gibbs & Madlib—Hip-Hop'
+          />
         </li>
 
         <li class="anim--enter">
          <div class="imgs">
-            <img class="one" src="~/static/img/chad/takagi/01.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/01.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/02.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/02.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/03.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/03.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/04.jpg" alt="">
-            <img class="one" src="~/static/img/chad/takagi/04.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/01.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/01.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/02.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/02.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/03.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/03.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/04.jpg" alt="">
+            <img class="one" src="~/static/img/jordan/lee/04.jpg" alt="">
           </div>
-          <n-link to = '/'>
-            <ListItem
-              kicker = '01'
-              title = 'Masakatsu Takagi—Marginalia II'
-              subtitle = 'Marginalia II by Masakatsu Takagi—Indie'
-            />
-          </n-link>
+          <ListItem
+            kicker = '01'
+            title = 'Lee Fields & The Expressions—It Rains Love'
+            subtitle = 'It Rains Love by Lee Fields & The Expressions—Soul'
+          />
         </li>
       </ul>
 
       <section class="fuzzys"/>
 
-      <n-link to = './jordan'>
+      <n-link to = './kristie'>
         <Next
           kicker = 'Playing Next'
-          title = "Jordan's Top 5"
+          title = "Kristie's Top 5"
         />
       </n-link>
     </main>
