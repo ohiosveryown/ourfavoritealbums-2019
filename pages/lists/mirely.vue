@@ -27,19 +27,18 @@
       <ul>
         <li class="anim--enter">
           <div class="imgs">
-            <img class="five" src="~/static/img/andrew/ye/01.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/01.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/02.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/02.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/03.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/03.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/04.jpg" alt="">
-            <img class="five" src="~/static/img/andrew/ye/05.jpg" alt="">
+            <img class="five" src="~/static/img/mirely/mac/01.png" alt="">
+            <img class="five" src="~/static/img/mirely/mac/01.png" alt="">
+            <img class="five" src="~/static/img/mirely/mac/02.jpg" alt="">
+            <img class="five" src="~/static/img/mirely/mac/02.jpg" alt="">
+            <img class="five" src="~/static/img/mirely/mac/03.png" alt="">
+            <img class="five" src="~/static/img/mirely/mac/03.png" alt="">
+            <img class="five" src="~/static/img/mirely/mac/04.jpg" alt="">
           </div>
           <ListItem
             kicker = '03'
-            title = 'Kanye West—Jesus is King'
-            subtitle = 'Jesus is King by Kanye West—Gospel'
+            title = 'Mac DeMarco—Here Comes the Cowboy'
+            subtitle = 'Here Comes the Cowboy by Mac DeMarco—Indie'
           />
         </li>
 
