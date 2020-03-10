@@ -27,8 +27,8 @@
           </li>
 
           <li class="mb-9">
-            <h2 class="mb-0 link steinbeck">• 2018 Albums of the Year</h2>
-            <h3 class="link canela op-5"><a href="#">Listen to the Playlist</a></h3>
+            <h2 class="mb-0 not-allowed steinbeck">• 2018 Albums of the Year</h2>
+            <!-- <h3 class="link canela op-5"><a href="#">Listen to the Playlist</a></h3> -->
           </li>
         </ul>
 
@@ -76,6 +76,7 @@
 
   .sm { display: inline; @include breakpoint(md) { display: none; }}
   .not-sm { display: none; @include breakpoint(md) { display: inline; }}
+  .not-allowed { cursor: not-allowed; }
 
 </style>
 
