@@ -138,8 +138,6 @@
 <style lang='scss' scoped>
   @import '~/assets/grid.scss';
 
-
-
 </style>
 
 

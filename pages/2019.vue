@@ -27,7 +27,7 @@
 
           <h3 class="anim--enter playlist headline infrared mb-1">The Compendium Playlist</h3>
           <h2 class="anim--enter playlist mb-4 body stone">Crafted by selecting the favorite song from each individual's favorite album, the compilation playlist is your tl:dr for Our Favorite Albums.</h2>
-          <iframe class="anim--enter" src="https://open.spotify.com/embed/playlist/37i9dQZF1E9JGyJApmKNfx" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe class="anim--enter" src="https://open.spotify.com/embed/playlist/64xUSivhicWrMkXNre6vz6" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </article>
 
         <section class="header--right">
